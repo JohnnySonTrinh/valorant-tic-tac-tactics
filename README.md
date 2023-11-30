@@ -1,5 +1,6 @@
 # [VALORANT TIC TAC TACTICS](https://johnnysontrinh.github.io/valorant-tic-tac-tactics)
 
+Tic Tac Tactics is an interactive web-based game that combines the classic strategy of tic-tac-toe with the dynamic world of Valorant. Players take on the roles of the characters Raze and Cypher, using their unique abilities to conquer the game board.
 ![screen](documentation/readme/mockup.png)
 
 ## UX
