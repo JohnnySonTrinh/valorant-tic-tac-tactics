@@ -1,3 +1,7 @@
+# [VALORANT TIC TAC TACTICS](https://johnnysontrinh.github.io/valorant-tic-tac-tactics)
+
+![screen](documentation/readme/mockup.png)
+
 ## UX
 
 ### Colors Scheme
