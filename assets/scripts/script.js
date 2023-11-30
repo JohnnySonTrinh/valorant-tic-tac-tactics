@@ -43,6 +43,7 @@ function showText(index) {
 nextBtn.addEventListener("click", () => {
   currentText = (currentText + 1) % howToPlayTexts.length
   showText(currentText)
+  updateButtons()
 })
 
 // show previous text
@@ -50,4 +51,23 @@ prevBtn.addEventListener("click", () => {
   currentText =
     (currentText - 1 + howToPlayTexts.length) % howToPlayTexts.length
   showText(currentText)
+  updateButtons()
 })
+// Update the visibility of next/prev buttons
+function updateButtons() {
+  prevBtn.style.display = currentText === 0 ? "none" : "inline-block"
+  nextBtn.style.display =
+    currentText === howToPlayTexts.length - 1 ? "none" : "inline-block"
+}
+
+// Load initial item
+window.addEventListener("DOMContentLoaded", () => {
+  showText(currentText)
+  updateButtons()
+})
+
+// show text based on index
+function showText(index) {
+  const { text } = howToPlayTexts[index]
+  infoDisplay.textContent = text
+}
