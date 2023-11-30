@@ -64,7 +64,7 @@ p {
   height: 90vh;
   max-width: 100vh;
   padding: 2em;
-  background-color: rgba(0, 0, 0, 0.54);
+  /*background-color: rgba(0, 0, 0, 0.54);*/
 }
 
 .game-container h1 {
@@ -90,8 +90,8 @@ p {
   max-width: 90%;
   margin: 0;
   font-size: small;
-  flex-grow: 1; /* This will make the paragraph take up any available space */
-  margin-bottom: 20px; /* Provide some space above the button */
+  flex-grow: 1;
+  margin-bottom: 20px;
 }
 
 .start-container button {
@@ -120,7 +120,7 @@ p {
 .btn:hover {
   color: var(--clr-secondary-1);
   background: transparent;
-  scale: 1.5;
+  scale: 1.2;
 }
 
 .btn-green {
@@ -140,6 +140,7 @@ p {
 }
 
 .btn-green:hover {
-  color: var(--clr-secondary-1);
+  color: var(--clr-secondary-4);
+  background: var(--clr-primary-2);
   scale: 1.5;
 }

@@ -1,3 +1,10 @@
+// Select items
+const infoDisplay = document.getElementById("info")
+
+const prevBtn = document.querySelector(".prev-btn")
+const nextBtn = document.querySelector(".next-btn")
+const playBtn = document.querySelector(".play-btn")
+
 // Local data
 const howToPlayTexts = [
   {
@@ -17,12 +24,6 @@ const howToPlayTexts = [
     text: "Initiate the challenge by selecting one of the diverse maps as your battleground. Ready your wits, and let the conquest begin!",
   },
 ]
-
-// Select items
-const infoDisplay = document.getElementById("info")
-
-const prevBtn = document.querySelector(".prev-btn")
-const nextBtn = document.querySelector(".next-btn")
 
 // Set starting item
 let currentText = 0
@@ -53,11 +54,16 @@ prevBtn.addEventListener("click", () => {
   showText(currentText)
   updateButtons()
 })
+
 // Update the visibility of next/prev buttons
 function updateButtons() {
-  prevBtn.style.display = currentText === 0 ? "none" : "inline-block"
-  nextBtn.style.display =
-    currentText === howToPlayTexts.length - 1 ? "none" : "inline-block"
+  // Toggle button visibility using opacity and pointer-events
+  prevBtn.style.opacity = currentText === 0 ? "0" : "1"
+  prevBtn.style.pointerEvents = currentText === 0 ? "none" : "auto"
+
+  nextBtn.style.opacity = currentText === howToPlayTexts.length - 1 ? "0" : "1"
+  nextBtn.style.pointerEvents =
+    currentText === howToPlayTexts.length - 1 ? "none" : "auto"
 }
 
 // Load initial item
@@ -71,3 +77,5 @@ function showText(index) {
   const { text } = howToPlayTexts[index]
   infoDisplay.textContent = text
 }
+
+playBtn.addEventListener("click", () => {})
