@@ -22,17 +22,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: var(
-    --ff-secondary
-  ); /* Assuming you have set this variable in :root */
-  background-color: var(--clr-grey-1); /* Set a default background color */
-  color: var(--clr-black); /* Set a default text color */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; /* Ensures the body takes at least the full viewport height */
-  text-align: center; /* Centers text by default, which can be overridden as needed */
+  font-family: var(--ff-secondary);
+  background-color: var(--clr-grey-1);
+  color: var(--clr-black);
+  min-height: 100vh;
+  text-align: center;
   overflow-x: hidden;
 }
 
@@ -51,45 +45,43 @@ p {
   color: var(--clr-white);
 }
 
-/* Additional base styles for other elements can be included here */
-
 .game-container {
   display: flexbox;
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(255, 217, 0, 0.627)),
     url(../images/background.webp) center/cover no-repeat;
   background-attachment: fixed;
-  width: 80%; /* or 100%, depending on how much margin you want */
-  max-width: 1200px; /* to prevent it from becoming too wide on larger screens */
-  margin: auto; /* to center it on the screen */
-  height: 80vh; /* height can be automatic, or use vh for a portion of the viewport height */
-  padding: 2em; /* to ensure there's some space inside the container */
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  height: 80vh;
+  padding: 2em;
 }
 
 .start-container {
   border: solid 2px blue;
   display: flex;
   flex-direction: column;
-  align-items: center; /* This will center align the items horizontally */
-  height: 60vh; /* Adjust height as necessary, 100vh will take the full viewport height */
-  padding: 1em; /* Add padding for some space inside the container */
+  align-items: center;
+  height: 60vh;
+  padding: 1em;
   margin-top: 5vh;
 }
 
 .start-container h2 {
-  margin-top: 0; /* Removes default top margin from h2 */
+  margin-top: 0;
 }
 
 .start-container p {
-  text-align: center; /* Centers the text */
-  max-width: 90%; /* Limits the width of the paragraph for better readability */
-  margin: 0; /* Centers the paragraph and removes default margin */
+  text-align: center;
+  max-width: 90%;
+  margin: 0;
   font-size: small;
 }
 
 .start-container button {
   margin-top: 3vh;
-  padding: 0.5em 1em; /* Adds some padding inside the button */
-  font-size: 1rem; /* Adjust the font size as necessary */
-  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  cursor: pointer;
 }
