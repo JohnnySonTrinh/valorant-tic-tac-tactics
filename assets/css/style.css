@@ -144,3 +144,82 @@ p {
   background: var(--clr-primary-2);
   scale: 1.5;
 }
+
+.hidden {
+  display: none;
+}
+
+.scoreboard h2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--clr-secondary-1);
+  border: solid 1px green;
+}
+
+.maps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  /*border: solid 1px blue;*/
+}
+
+.map {
+  flex: 1 1 calc(33.333% - 10px);
+  height: 5.4rem;
+  border-radius: var(--radius);
+  margin-bottom: 5px;
+}
+.map:hover {
+  scale: 1.2;
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.bind {
+  background: url(/assets/images/map-bind.webp) center;
+  background-size: cover;
+}
+.haven {
+  background: url(/assets/images/map-haven.webp) center;
+  background-size: cover;
+}
+.split {
+  background: url(/assets/images/map-split.webp) center;
+  background-size: cover;
+}
+.ascent {
+  background: url(/assets/images/map-ascent.webp) center;
+  background-size: cover;
+}
+.icebox {
+  background: url(/assets/images/map-icebox.webp) center;
+  background-size: cover;
+}
+.breeze {
+  background: url(/assets/images/map-breeze.webp) center;
+  background-size: cover;
+}
+.frature {
+  background: url(/assets/images/map-frature.webp) center;
+  background-size: cover;
+}
+.pearl {
+  background: url(/assets/images/map-pearl.webp) center;
+  background-size: cover;
+}
+.sunset {
+  background: url(/assets/images/map-sunset.webp) center;
+  background-size: cover;
+}
+
+.reset-btn {
+  padding: 0.5rem 1rem;
+  width: 6rem;
+  background-color: var(--clr-primary-1);
+  color: var(--clr-secondary-1);
+  transition: var(--transition);
+}
