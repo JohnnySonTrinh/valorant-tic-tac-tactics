@@ -22,7 +22,6 @@
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --max-width: 1170px;
 }
 
 body {
@@ -36,6 +35,7 @@ body {
   overflow-x: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(255, 217, 0, 0.627)),
     url(../images/background.webp) center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 h1,
