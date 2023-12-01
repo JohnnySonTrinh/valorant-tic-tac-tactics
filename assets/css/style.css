@@ -177,39 +177,39 @@ p {
 }
 
 .bind {
-  background: url(/assets/images/map-bind.webp) center;
+  background: url(../images/map-bind.webp) center;
   background-size: cover;
 }
 .haven {
-  background: url(/assets/images/map-haven.webp) center;
+  background: url(../images/map-haven.webp) center;
   background-size: cover;
 }
 .split {
-  background: url(/assets/images/map-split.webp) center;
+  background: url(../images/map-split.webp) center;
   background-size: cover;
 }
 .ascent {
-  background: url(/assets/images/map-ascent.webp) center;
+  background: url(../images/map-ascent.webp) center;
   background-size: cover;
 }
 .icebox {
-  background: url(/assets/images/map-icebox.webp) center;
+  background: url(../images/map-icebox.webp) center;
   background-size: cover;
 }
 .breeze {
-  background: url(/assets/images/map-breeze.webp) center;
+  background: url(../images/map-breeze.webp) center;
   background-size: cover;
 }
 .frature {
-  background: url(/assets/images/map-frature.webp) center;
+  background: url(../images/map-frature.webp) center;
   background-size: cover;
 }
 .pearl {
-  background: url(/assets/images/map-pearl.webp) center;
+  background: url(../images/map-pearl.webp) center;
   background-size: cover;
 }
 .sunset {
-  background: url(/assets/images/map-sunset.webp) center;
+  background: url(../images/map-sunset.webp) center;
   background-size: cover;
 }
 
