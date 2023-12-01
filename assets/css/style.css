@@ -54,7 +54,7 @@ p {
 }
 
 .game-container {
-  /*border: solid 1px red;*/
+  border: solid 1px red;
   display: flexbox;
   justify-content: center;
   background-attachment: fixed;
@@ -63,7 +63,6 @@ p {
   margin: auto;
   height: 90vh;
   max-width: 100vh;
-  padding: 2em;
   /*background-color: rgba(0, 0, 0, 0.54);*/
 }
 
@@ -97,8 +96,6 @@ p {
 .start-container button {
   margin-top: 3vh;
   padding: 0.5em 0.5em;
-  font-size: 1rem;
-  cursor: pointer;
 }
 
 /* Button styling with hover effect */
