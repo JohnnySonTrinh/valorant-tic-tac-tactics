@@ -1,6 +1,9 @@
 // Select items
 const infoDisplay = document.getElementById("info")
 
+const startContainer = document.querySelector(".start-container")
+const mapsContainer = document.querySelector(".maps-container")
+
 const prevBtn = document.querySelector(".prev-btn")
 const nextBtn = document.querySelector(".next-btn")
 const playBtn = document.querySelector(".play-btn")
@@ -40,14 +43,14 @@ function showText(index) {
   infoDisplay.textContent = item.text
 }
 
-// show next text
+// Show next text
 nextBtn.addEventListener("click", () => {
   currentText = (currentText + 1) % howToPlayTexts.length
   showText(currentText)
   updateButtons()
 })
 
-// show previous text
+// Show previous text
 prevBtn.addEventListener("click", () => {
   currentText =
     (currentText - 1 + howToPlayTexts.length) % howToPlayTexts.length
@@ -72,10 +75,18 @@ window.addEventListener("DOMContentLoaded", () => {
   updateButtons()
 })
 
-// show text based on index
+// Show text based on index
 function showText(index) {
   const { text } = howToPlayTexts[index]
   infoDisplay.textContent = text
 }
 
 playBtn.addEventListener("click", () => {})
+
+// Event listener for the play button
+playBtn.addEventListener("click", () => {
+  // Hide the start container and show the maps container
+  startContainer.classList.add("hidden")
+  mapsContainer.classList.remove("hidden")
+})
+
