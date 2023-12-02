@@ -81,12 +81,28 @@ function showText(index) {
   infoDisplay.textContent = text
 }
 
-playBtn.addEventListener("click", () => {})
+document.addEventListener("DOMContentLoaded", () => {
+  const unmuteButton = document.getElementById("unmute")
+  const sound = document.getElementById("mySound")
 
-// Event listener for the play button
-playBtn.addEventListener("click", () => {
-  // Hide the start container and show the maps container
-  startContainer.classList.add("hidden")
-  mapsContainer.classList.remove("hidden")
+  // Boolean to keep track of whether sound is playing
+  let isPlaying = false
+
+  unmuteButton.addEventListener("click", () => {
+    // Check if the sound is currently playing
+    if (isPlaying) {
+      sound.pause() // Pause the sound
+      sound.currentTime = 0 // Optionally, reset the sound to the start
+      isPlaying = false // Update the isPlaying status
+    } else {
+      sound
+        .play() // Play the sound
+        .then(() => {
+          isPlaying = true // Update the isPlaying status
+        })
+        .catch((error) => {
+          console.error("Error playing the sound:", error)
+        })
+    }
+  })
 })
-
