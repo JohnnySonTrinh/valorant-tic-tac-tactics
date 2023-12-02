@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap");
+
+:root {
+  /* Valorant Theme Colors */
+  --clr-primary-1: #c1272d;
+  --clr-primary-2: #009b3a;
+  --clr-secondary-1: #ffd700;
+  --clr-secondary-2: #ff7f00;
+  --clr-secondary-3: #c9a66b;
+  --clr-secondary-4: #b8ebd0;
+  /* Base Colors */
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  /* Gray shades */
+  --clr-grey-1: hsl(207, 11%, 20%);
+  --clr-grey-2: hsl(210, 22%, 49%);
+  /* Font Family Variables */
+  --ff-primary: Roboto Slab, sans-serif;
+  --ff-secondary: Montserrat, sans-serif;
+  /* Commonly used CSS properties for consistency */
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: var(--ff-secondary);
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  background: linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)),
+    url(../images/background.webp) center/cover no-repeat;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-secondary-2);
+}
+
+h1,
+h2 {
+  color: var(--clr-secondary-2);
+  font-family: var(--ff-primary);
+  text-align: center;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  color: var(--clr-secondary-1);
+  font-size: 1.5rem;
+}
+p {
+  font-size: 0.9rem;
+  color: var(--clr-white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: 50px repeat(3, 80px) 30px;
+  gap: 5px;
+}
+
+.turn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-secondary-1);
+  font-size: 1.5rem;
+}
+
+.square {
+  opacity: 0.6;
+  border-radius: var(--radius);
+}
+
+.square:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 20px var(--clr-secondary-4);
+  transform: scale(1.2);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map1 {
+  background: url(../images/map-bind.webp) center/cover no-repeat;
+}
+.map2 {
+  background: url(../images/map-haven.webp) center/cover no-repeat;
+}
+.map3 {
+  background: url(../images/map-split.webp) center/cover no-repeat;
+}
+.map4 {
+  background: url(../images/map-ascent.webp) center/cover no-repeat;
+}
+.map5 {
+  background: url(../images/map-icebox.webp) center/cover no-repeat;
+}
+.map6 {
+  background: url(../images/map-breeze.webp) center/cover no-repeat;
+}
+.map7 {
+  background: url(../images/map-frature.webp) center/cover no-repeat;
+}
+.map8 {
+  background: url(../images/map-pearl.webp) center/cover no-repeat;
+}
+.map9 {
+  background: url(../images/map-sunset.webp) center/cover no-repeat;
+}
+
+.btn {
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  background: var(--clr-primary-2);
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  font-size: 0.8rem;
+  border: 2px solid var(--clr-primary-2);
+  cursor: pointer;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.btn-red {
+  color: var(--clr-white);
+  background: var(--clr-primary-1);
+  border: 2px solid var(--clr-primary-1);
+}
+
+.btn-red:hover {
+  scale: 1.2;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    width: 490px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 50px repeat(3, 150px) 60px;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
