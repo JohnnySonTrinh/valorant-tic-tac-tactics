@@ -79,7 +79,7 @@ p {
     width: 490px;
     display: grid;
     grid-template-columns: repeat(3, 150px);
-    grid-template-rows: 100px 300px 50px 30px;
+    grid-template-rows: 100px 300px 30px 50px;
     gap: 15px;
   }
   h1 {
