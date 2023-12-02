@@ -9,43 +9,35 @@
     <title>Tic Tac Tactics</title>
 </head>
 <body>
-    <main class="game-container">
-        <h1>TIC TAC TACTICS</h1>
-    <section class="start-container">
-        <h2>How to play!</h2>
-        <p id="info"></p>
-        <div>
-            <button class="prev-btn btn icon" aria-label="Previous">
+    <h1>Tic tac tactics</h1>
+    <main>
+        <div class="welcome-container">
+            <div class="htp">
+                <h2>How to play!</h2>
+            </div>
+            <div class="info">
+                <p id="info"></p>
+            </div>
+            <div class="sound">
+                <button class=" btn btn-mute">
+                    <i class="fa-solid fa-volume-off"></i>
+                </button>
+            </div>
+            <div class="button"><button class="btn-green prev-btn btn" aria-label="Previous">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                 <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="next-btn btn icon" aria-label="Next">
+            </button></div>
+            <div class="button"><a class="btn-green play-btn" href="start.html">play</a></div>
+            <div class="button"><button class="btn-green next-btn btn" aria-label="Next">
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-            <button class="btn-green play-btn">play</button>
-    </section>
-<section class="maps-container hidden">
-    <div class="scoreboard">
-      <h2><span class="score raze-score">0</span>-<span class="score cypher-score">0</span></h2>
-    </div>
-    <div class="maps">
-        <div class="map bind" id="map1"></div>
-        <div class="map haven" id="map2"></div>
-        <div class="map split" id="map3"></div>
-        <div class="map ascent" id="map4"></div>
-        <div class="map icebox" id="map5"></div>
-        <div class="map breeze" id="map6"></div>
-        <div class="map frature" id="map7"></div>
-        <div class="map pearl" id="map8"></div>
-        <div class="map sunset" id="map9"></div>
-    </div>
-    <div>
-    <a class="btn reset-btn" href="index.html">Reset</a>
-    </div>
-  </section>  
+            </button></div>
+        </div>
     </main>
+    <script
+      src="https://kit.fontawesome.com/74774a4a16.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
