@@ -66,6 +66,7 @@ p {
   font-size: 0.9rem;
   color: var(--clr-white);
 }
+
 .welcome-container {
   display: grid;
   grid-template-columns: repeat(3, 80px);
