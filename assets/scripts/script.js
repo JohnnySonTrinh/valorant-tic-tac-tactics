@@ -1,12 +1,11 @@
 // Select items
 const infoDisplay = document.getElementById("info")
+const sound = document.getElementById('mySound')
 
-const startContainer = document.querySelector(".start-container")
-const mapsContainer = document.querySelector(".maps-container")
+const prevBtn = document.getElementById("prev-btn")
+const nextBtn = document.getElementById("next-btn")
+const unmuteButton = document.getElementById('unmute-btn')
 
-const prevBtn = document.querySelector(".prev-btn")
-const nextBtn = document.querySelector(".next-btn")
-const playBtn = document.querySelector(".play-btn")
 
 // Local data
 const howToPlayTexts = [
@@ -81,28 +80,19 @@ function showText(index) {
   infoDisplay.textContent = text
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const unmuteButton = document.getElementById("unmute")
-  const sound = document.getElementById("mySound")
+// Set the audio to loop
+sound.loop = true;
 
-  // Boolean to keep track of whether sound is playing
-  let isPlaying = false
-
-  unmuteButton.addEventListener("click", () => {
-    // Check if the sound is currently playing
-    if (isPlaying) {
-      sound.pause() // Pause the sound
-      sound.currentTime = 0 // Optionally, reset the sound to the start
-      isPlaying = false // Update the isPlaying status
-    } else {
-      sound
-        .play() // Play the sound
-        .then(() => {
-          isPlaying = true // Update the isPlaying status
-        })
-        .catch((error) => {
-          console.error("Error playing the sound:", error)
-        })
+// Play audio when press unmute
+unmuteButton.addEventListener('click', () => {
+  // Check if the sound is currently paused
+  if (sound.paused) {
+    sound.play().catch(error => {
+      console.error("Error playing the sound:", error);
+    });
+  } else {
+    sound.pause();
+    sound.currentTime = 0;
     }
-  })
 })
+
