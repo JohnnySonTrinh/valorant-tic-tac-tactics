@@ -2,6 +2,17 @@
 
 Return back to the [README.md](README.md) file.
 
+Welcome to the Tic Tac Tactics Site testing results, in this file you will see how each and every element tested to ensure each element worked as intended.
+
+## Code Validation
+
+### HTML
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+| Page | W3C                                                                                                                         | Screenshot | Notes |
+| ---- | --------------------------------------------------------------------------------------------------------------------------- | ---------- | ----- |
+| Home | [W3C Home](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2Findex.html) | ![Screenshot](documentation/test/html-validator-home.png)| Pass: No Errors |
 ## Bug Report
 
 ### Issue:
