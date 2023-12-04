@@ -28,15 +28,14 @@ I've used CSS ':root' variables to easily update the global colour scheme by cha
   /* Gray shades */
   --clr-grey-1: hsl(207, 11%, 20%);
   --clr-grey-2: hsl(210, 22%, 49%);
-  /* Primary and secondary font families */
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  /* Font Family Variables */
+  --ff-primary: Roboto Slab, sans-serif;
+  --ff-secondary: Montserrat, sans-serif;
   /* Commonly used CSS properties for consistency */
   --transition: all 0.3s linear;
-  --spacing: 0.25rem;
+  --spacing: 0.2rem;
   --radius: 0.5rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --max-width: 1170px;
+  --light-shadow: 0 5px 15px rgba(201, 166, 107, 0.395);
 }
 ```
 
@@ -52,28 +51,37 @@ I've used CSS ':root' variables to easily update the global colour scheme by cha
 
 ### User Goals
 
-- Visually appealing, including images.
-- Easily navigated around.
-- Quality and valuable content.
-- Easily found contact details.
+The primary goals for users who visit and play Tic Tac Tactics include:
+
+- Enjoy a fun and engaging game that can be played with friends.
+- Experience a familiar game with a unique twist that increases the strategic depth.
+- Navigate the site easily with intuitive controls and clear instructions.
+- Access the game from various devices with consistent quality and performance.
 
 ### Site Owner's Goals
 
-- Showcase professional gaming credentials and coaching services to attract clients seeking personal coaching in Valorant.
-- Provide detailed information about coaching methods, success stories, and available sessions.
-- Establish credibility through sharing testimonials and experiences from previous clients.
-- Improve online visibility and attract traffic from potential clients and gaming enthusiasts.
+The goals for the site owner are:
+
+- Provide an entertaining and engaging game that encourages repeated play.
+- Establish an online presence for users to associate with the [Game or Theme] brand.
+- Collect user feedback to continuously improve the gameplay and user experience.
+- Monetize the game effectively while maintaining a balance between user satisfaction and revenue generation.
 
 ### Requirements
 
-- Responsive design for a seamless experience on desktop, tablet, and mobile devices.
-- Upfront and clear information about the services and value proposition of the gaming portfolio.
-- A straightforward method for users to reach out via contact forms or social media.
-- A design that captures the dynamic and immersive world of gaming and Valorant!
+To meet the user and site owner's goals, the following requirements have been identified:
+
+- The game must be fully playable with interactive elements like maps and character abilities.
+- A responsive design that adapts to different screen sizes and devices.
+- High-quality visuals and sounds that enhance the gameplay experience.
+- Clear user instructions and easy navigation throughout the site.
+
 
 ### Expectations
 
-- All external links, especially to social media channels, open in new tabs to facilitate easy return navigation.
-- Every internal link, from navigation menus to call-to-action buttons, functions correctly guiding users without error.
-- the quality and performance of the website should be consistent across all devices and screen sizes.
-- All content, from biographical details to service offerings, should be current, precise and accurate.
+When visiting Tic Tac Tactics, users can expect:
+
+- A visually appealing interface with thematic elements from [Game or Theme].
+- Smooth and error-free gameplay with clear outcomes and feedback.
+- A secure and reliable website that maintains user privacy and data protection.
+- Regular updates and new features to keep the game fresh and exciting.
