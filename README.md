@@ -41,11 +41,21 @@ I've used CSS ':root' variables to easily update the global colour scheme by cha
 
 ### Typography
 
-- [Roboto](https://fonts.google.com/specimen/Roboto) was used for the primary headers and titles.
+For Tic Tac Tactics, I've chosen a combination of Roboto Slab and Montserrat fonts to create an engaging and readable user interface. These fonts were selected for their clarity, legibility, and aesthetic appeal, complementing the overall design of the game.
 
-- [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans) was used for all other secondary text.
+#### Roboto Slab
+Roboto Slab is used for headings and areas requiring emphasis. With its semi-rounded details and sturdy serifs, this font adds a touch of elegance and formality, contrasting well with the more straightforward style of Montserrat.
 
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+#### Montserrat
+Montserrat is the secondary font used throughout the game. Its clean, modern sans-serif design makes it ideal for body text, providing excellent readability and a contemporary look that aligns with the game's visual style.
+
+#### Implementation in CSS
+The fonts are included at the beginning of our main CSS file using the `@import` rule from Google Fonts. This method ensures that the fonts are available as soon as the CSS is loaded, maintaining a consistent typographic experience throughout the game.
+
+```css
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap");
+```
 
 ## User Experience
 
@@ -81,7 +91,7 @@ To meet the user and site owner's goals, the following requirements have been id
 
 When visiting Tic Tac Tactics, users can expect:
 
-- A visually appealing interface with thematic elements from [Game or Theme].
+- A visually appealing interface with thematic elements from Valorant.
 - Smooth and error-free gameplay with clear outcomes and feedback.
 - A secure and reliable website that maintains user privacy and data protection.
 - Regular updates and new features to keep the game fresh and exciting.
