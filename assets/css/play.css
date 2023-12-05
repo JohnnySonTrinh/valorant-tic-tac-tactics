@@ -34,11 +34,10 @@
   border: none;
 }
 
-html,
+html, 
 body {
   height: 100%;
-  background: linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)),
-    url(../images/background.webp) center/cover no-repeat;
+  background: linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(../images/background.webp) center/cover no-repeat;
 }
 
 body {
