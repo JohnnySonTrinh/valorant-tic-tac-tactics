@@ -1,10 +1,10 @@
 // Select items
 const infoDisplay = document.getElementById("info")
-const sound = document.getElementById('mySound')
+const sound = document.getElementById("mySound")
 
 const prevBtn = document.getElementById("prev-btn")
 const nextBtn = document.getElementById("next-btn")
-const unmuteButton = document.getElementById('unmute-btn')
+const unmuteButton = document.getElementById("unmute-btn")
 
 
 // Local data
@@ -84,7 +84,7 @@ function showText(index) {
 sound.loop = true;
 
 // Play audio when press unmute
-unmuteButton.addEventListener('click', () => {
+unmuteButton.addEventListener("click", () => {
   // Check if the sound is currently paused
   if (sound.paused) {
     sound.play().catch(error => {
