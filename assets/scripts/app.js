@@ -1,33 +1,42 @@
-const mapContainer = document.querySelector(".map-container")
-const map = document.querySelectorAll(".map")
-const back = document.querySelectorAll(".back")
+/* jshint esversion: 11, asi: true */
+
+const mapContainer = document.querySelector(".map-container");
+const map = document.querySelectorAll(".map");
+const back = document.querySelectorAll(".back");
 
 // Iterate over each map and click event
 map.forEach(map => {
   map.addEventListener("click", () => {
 
+    // Change background
+    let bg = map.dataset.bg;
+
+    document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/map-${bg}.webp) center/cover`;
     // Get correspoding board ID
-    const boardId = "board" + map.id.replace("map", "")
+    console.log("click");
+    
+    const boardId = "board" + map.id.replace("map", "");
     // Hide all boards
     document.querySelectorAll(".board").forEach(board => {
-      board.classList.add("hidden")
-    })
+      board.classList.add("hidden");
+    });
     // Show the corresponding board
-    const board = document.getElementById(boardId)
-    board.classList.remove("hidden")
-    mapContainer.classList.add("hidden")
-  })
-})
+    const board = document.getElementById(boardId);
+    board.classList.remove("hidden");
+    mapContainer.classList.add("hidden");
+  });
+});
 
 // Add click event listener to each back button
 back.forEach(button => {
   button.addEventListener("click", () => {
     // Hide the current board
-    button.parentElement.classList.add("hidden")
+    button.parentElement.classList.add("hidden");
+    document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/background.webp) center/cover`;
     // Show the maps container again
-    mapContainer.classList.remove("hidden")
-  })
-})
+    mapContainer.classList.remove("hidden");
+  });
+});
 
 let currentPlayer = "Raze";  // Start with Raze
 

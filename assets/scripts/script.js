@@ -1,3 +1,4 @@
+/* jshint esversion: 11 asi: true */
 // Select items
 const infoDisplay = document.getElementById("info")
 const sound = document.getElementById("mySound")
@@ -64,8 +65,7 @@ function updateButtons() {
   prevBtn.style.pointerEvents = currentText === 0 ? "none" : "auto"
 
   nextBtn.style.opacity = currentText === howToPlayTexts.length - 1 ? "0" : "1"
-  nextBtn.style.pointerEvents =
-    currentText === howToPlayTexts.length - 1 ? "none" : "auto"
+  nextBtn.style.pointerEvents = currentText === howToPlayTexts.length - 1 ? "none" : "auto"
 }
 
 // Load initial item
@@ -90,9 +90,13 @@ unmuteButton.addEventListener("click", () => {
     sound.play().catch(error => {
       console.error("Error playing the sound:", error);
     });
+    unmuteButton.classList.remove('fa-volume-off');
+    unmuteButton.classList.add('fa-volume-up');
   } else {
     sound.pause();
     sound.currentTime = 0;
+    unmuteButton.classList.remove('fa-volume-up');
+    unmuteButton.classList.add('fa-volume-off');
     }
 })
 
