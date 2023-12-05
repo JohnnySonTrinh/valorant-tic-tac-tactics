@@ -231,7 +231,6 @@ p {
   }
   .map-container {
     width: 490px;
-    display: grid;
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: 50px repeat(3, 150px) 60px;
     gap: 20px;
