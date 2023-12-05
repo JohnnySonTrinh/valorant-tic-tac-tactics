@@ -18,3 +18,13 @@ map.forEach(map => {
     mapContainer.classList.add("hidden")
   })
 })
+// Add click event listener to each back button
+back.forEach(button => {
+  button.addEventListener("click", () => {
+    // Hide the current board
+    button.parentElement.classList.add("hidden")
+    // Show the maps container again
+    mapContainer.classList.remove("hidden")
+  })
+})
+
