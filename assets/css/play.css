@@ -252,3 +252,8 @@ p {
     border-radius: var(--radius);
   }
 }
+
+/* Hides the board */
+.hidden {
+  display: none;
+}
