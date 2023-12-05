@@ -244,4 +244,11 @@ p {
     justify-content: center;
     align-items: center;
   }
+  .tic-tac-toe-board {
+    width: 490px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 50px repeat(3, 150px) 60px;
+    gap: 20px;
+    border-radius: var(--radius);
+  }
 }
