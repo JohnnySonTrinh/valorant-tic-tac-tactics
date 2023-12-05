@@ -159,7 +159,7 @@ p {
 }
 
 .btn-red:hover {
-  scale: 1.2;
+  background-color: var(--clr-primary-1);
   color: var(--clr-secondary-2);
 }
 
