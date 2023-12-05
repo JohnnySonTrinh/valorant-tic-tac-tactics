@@ -229,14 +229,14 @@ p {
   h2 {
     font-size: 2rem;
   }
-  .grid {
+  .map-container {
     width: 490px;
     display: grid;
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: 50px repeat(3, 150px) 60px;
     gap: 20px;
   }
-  .maps:hover {
+  .map:hover {
     scale: 1.15;
   }
   .btn {
