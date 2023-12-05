@@ -57,6 +57,7 @@ h2 {
 }
 
 h1 {
+  color: var(--clr-secondary-2);
   font-size: 2em;
 }
 
