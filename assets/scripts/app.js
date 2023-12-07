@@ -183,9 +183,14 @@ function handleCellClick(cell, boardId) {
   currentPlayer = currentPlayer === "Raze" ? "Cypher" : "Raze";
 }
 
+// Updates the score display for Raze or Cypher
+function updateScore(player) {
+  if (player === "Raze") {
+    razeWins++;
+    razeScoreElement.textContent = razeWins;
   } else {
-    cell.innerHTML = '<img class="cypher" src="assets/images/ability-spycam.webp" alt="Cypher">';
-    currentPlayer = "Raze";
+    cypherWins++;
+    cypherScoreElement.textContent = cypherWins;
   }
 }
 
