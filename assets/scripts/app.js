@@ -38,19 +38,58 @@ back.forEach(button => {
   });
 });
 
-let currentPlayer = "Raze";  // Start with Raze
 
-document.querySelectorAll(".cell").forEach(cell => {
-  cell.addEventListener("click", handleCellClick, { once: true });
+
+
+
+
+
+// Game logic
+let currentPlayer = "Raze";
+const boards = {}; // Stores the state of each tic-tac-toe board
+let razeWins = 0;   // Count of wins for Raze
+let cypherWins = 0; // Count of wins for Cypher
+
+// Elements for displaying the scores
+const razeScoreElement = document.querySelector('.raze-win');
+const cypherScoreElement = document.querySelector('.cypher-win');
+
+// Initialize each tic-tac-toe board and set event listeners for cells
+document.querySelectorAll('.tic-tac-toe-board').forEach(board => {
+  const boardId = board.id;
+  boards[boardId] = {
+    cells: Array(9).fill(null), // Track the state of each cell (Raze, Cypher, or null)
+    winner: null // Winner of the board (null if no winner yet)
+  };
+
+  board.querySelectorAll('.cell').forEach((cell, index) => {
+    cell.setAttribute('data-index', index); // Set data attribute for cell index
+    cell.addEventListener('click', () => handleCellClick(cell, boardId), { once: true }); // Add click event listener
+  });
 });
 
-function handleCellClick(event) {
-  const cell = event.target;
-  
-  // Add the Raze or Cypher icon
-  if (currentPlayer === "Raze") {
-    cell.innerHTML = '<img class="raze" src="assets/images/ability-paint-shells.webp" alt="Raze">';
-    currentPlayer = "Cypher";
+// Function to check for a win on a board
+function checkWin(cells, player) {
+  const winCombinations = [
+    [0, 1, 2], [3, 4, 5], [6, 7, 8],
+    [0, 3, 6], [1, 4, 7], [2, 5, 8],
+    [0, 4, 8], [2, 4, 6]
+  ];
+  // Return true if any winning combination is achieved by the player
+  return winCombinations.some(combination => {
+    return combination.every(index => cells[index] === player);
+  });
+}
+
+// Helper function to check if a specific player has won the overall game
+function checkPlayerWin(player, winCombinations) {
+  return winCombinations.some(combination => {
+    return combination.every(index => {
+      const mapElement = document.querySelector(`.map[data-map="${index}"]`);
+      return mapElement && mapElement.getAttribute('data-winner') === player;
+    });
+  });
+}
   } else {
     cell.innerHTML = '<img class="cypher" src="assets/images/ability-spycam.webp" alt="Cypher">';
     currentPlayer = "Raze";
