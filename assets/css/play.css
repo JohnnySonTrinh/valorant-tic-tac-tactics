@@ -243,19 +243,19 @@ p {
 }
 
 .raze-glow {
-  box-shadow: 0 0 20px 5px var(--clr-primary-1);
+  box-shadow: 0 0 20px 10px var(--clr-primary-1);
 }
 
 .cypher-glow {
-  box-shadow: 0 0 20px 5px var(--clr-primary-2);
+  box-shadow: 0 0 20px 10px var(--clr-primary-2);
 }
 
 .raze-glow:hover {
-  box-shadow: 0 0 20px 5px var(--clr-primary-1);
+  background: linear-gradient(rgba(255, 0, 0, 0.221), rgba(255, 0, 0, 0.221)), url(../images/agent-raze.webp) center/cover no-repeat;
   transition: var(--transition);
 }
 .cypher-glow:hover {
-  box-shadow: 0 0 20px 5px var(--clr-primary-2);
+  background: linear-gradient(rgba(0, 225, 0, 0.221), rgba(0, 225, 0, 0.221)), url(../images/agent-cypher.webp) center/cover no-repeat;
   transition: var(--transition);
 }
 

@@ -1,4 +1,6 @@
 /* jshint esversion: 11, asi: true */
+const sound = document.getElementById("mySound")
+const unmuteButton = document.getElementById("unmute-btn")
 
 const mapContainer = document.querySelector(".map-container");
 const map = document.querySelectorAll(".map");
@@ -26,6 +28,26 @@ map.forEach(map => {
     mapContainer.classList.add("hidden");
   });
 });
+
+// Set the audio to loop
+sound.loop = true;
+
+// Play audio when press unmute
+unmuteButton.addEventListener("click", () => {
+  // Check if the sound is currently paused
+  if (sound.paused) {
+    sound.play().catch(error => {
+      console.error("Error playing the sound:", error);
+    });
+    unmuteButton.classList.remove('fa-volume-off');
+    unmuteButton.classList.add('fa-volume-up');
+  } else {
+    sound.pause();
+    sound.currentTime = 0;
+    unmuteButton.classList.remove('fa-volume-up');
+    unmuteButton.classList.add('fa-volume-off');
+    }
+})
 
 // Add click event listener to each back button
 back.forEach(button => {
