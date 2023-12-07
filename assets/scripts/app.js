@@ -194,3 +194,12 @@ function updateScore(player) {
   }
 }
 
+// Locks a board after a player wins it
+function lockBoard(boardId) {
+  const board = document.getElementById(boardId);
+  const cells = board.querySelectorAll('.cell');
+  // Add 'locked-cell' class to each cell
+  cells.forEach(cell => {
+    cell.classList.add('locked-cell');
+  });
+}
