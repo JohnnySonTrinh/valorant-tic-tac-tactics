@@ -211,12 +211,52 @@ p {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+
+.locked-cell {
+  background-color: black;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.raze-win {
+  color: var(--clr-primary-1);
+}
+
+.cypher-win {
+  color: var(--clr-primary-2);
+}
+
 .raze {
   background: var(--clr-primary-1);
 }
 
 .cypher {
   background: var(--clr-primary-2);
+}
+
+.cell-raze-turn {
+  background-color: var(--clr-primary-1);
+}
+
+.cell-cypher-turn {
+  background-color: var(--clr-primary-2);
+}
+
+.raze-glow {
+  box-shadow: 0 0 20px 5px var(--clr-primary-1);
+}
+
+.cypher-glow {
+  box-shadow: 0 0 20px 5px var(--clr-primary-2);
+}
+
+.raze-glow:hover {
+  box-shadow: 0 0 20px 5px var(--clr-primary-1);
+  transition: var(--transition);
+}
+.cypher-glow:hover {
+  box-shadow: 0 0 20px 5px var(--clr-primary-2);
+  transition: var(--transition);
 }
 
 @media (min-width: 768px) {
