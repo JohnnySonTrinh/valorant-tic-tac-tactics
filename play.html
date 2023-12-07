@@ -46,7 +46,9 @@
         <div class="map map9" id="map9" data-map="8" data-bg="sunset"></div>
       <!-- Buttons -->
         <div class="button">
-          <button class="btn">INFO</button>
+          <button class="btn btn-mute fa-solid fa-volume-off" id="unmute-btn" aria-label="Unmute">
+            <audio id="mySound" src="assets/sound/welcome.mp3" class="visually-hidden"></audio>
+        </button>
         </div>
         <div class="button">
           <a class="btn" href="play.html">Reset</a>
@@ -219,6 +221,7 @@
       </section>
     </main>
     <!-- Scripts-->
+    <script src="https://kit.fontawesome.com/74774a4a16.js" crossorigin="anonymous"></script>
     <script src="assets/scripts/app.js"></script>
   </body>
 </html>
