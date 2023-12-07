@@ -99,12 +99,6 @@ p {
   transform: scale(1.1);
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .map1 {
   background: url(../images/map-bind.webp) center/cover no-repeat;
 }
@@ -131,6 +125,12 @@ p {
 }
 .map9 {
   background: url(../images/map-sunset.webp) center/cover no-repeat;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -194,11 +194,6 @@ p {
   background-color: #b8ebd0bc;
 }
 
-.back {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
 .cell:hover {
   transition: 0.5s ease-in-out;
   opacity: 1;
@@ -212,6 +207,10 @@ p {
   border-radius: var(--radius);
 }
 
+.back {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
 .raze {
   background: var(--clr-primary-1);
 }
