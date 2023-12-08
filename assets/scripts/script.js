@@ -87,16 +87,20 @@ sound.loop = true;
 unmuteButton.addEventListener("click", () => {
   // Check if the sound is currently paused
   if (sound.paused) {
-    sound.play().catch(error => {
+    sound.play().then(() => {
+      // Change icon to volume up when the sound is playing
+      unmuteButton.classList.remove('fa-volume-off');
+      unmuteButton.classList.add('fa-volume-up');
+    }).catch(error => {
       console.error("Error playing the sound:", error);
     });
-    unmuteButton.classList.remove('fa-volume-off');
-    unmuteButton.classList.add('fa-volume-up');
   } else {
     sound.pause();
     sound.currentTime = 0;
+    // Change icon to volume off when the sound is paused
     unmuteButton.classList.remove('fa-volume-up');
     unmuteButton.classList.add('fa-volume-off');
-    }
-})
+  }
+  
+});
 
