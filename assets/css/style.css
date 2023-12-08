@@ -135,6 +135,8 @@ p {
   text-decoration: none;
 }
 
+.btn:hover {
+  color: var(--clr-white);
 }
 
 .btn-play:hover {
@@ -240,10 +242,6 @@ p {
   border-radius: var(--radius);
   text-align: center;
   text-decoration: none;
-}
-
-.btn:hover {
-  color: var(--clr-secondary-4);
 }
 
 .btn-red {
