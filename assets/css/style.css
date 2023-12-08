@@ -137,15 +137,13 @@ p {
 }
 
 .btn-mute {
-  background-color: transparent;
   color: var(--clr-secondary-1);
-  border: none;
   box-shadow: none;
 }
 
 .btn-mute:hover {
   color: var(--clr-primary-2);
-  scale: 1.1;
+  border: none;
   box-shadow: none;
 }
 
@@ -265,8 +263,10 @@ p {
 }
 
 .btn-red:hover {
-  background-color: var(--clr-primary-1);
-  color: var(--clr-secondary-2);
+  background-color: transparent;
+  color: var(--clr-black);
+}
+
 .btn-reset {
   width: 100%;
   background-color: var(--clr-secondary-1);
