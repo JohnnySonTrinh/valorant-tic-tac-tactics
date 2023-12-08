@@ -50,9 +50,8 @@
         <div class="map map9" id="map9" data-map="9" data-bg="sunset"></div>
       <!-- Buttons -->
         <div class="button">
-          <button class="btn-2 btn-mute fa-solid fa-volume-off" id="unmute-btn" aria-label="Unmute">
-            <audio id="mySound" src="assets/sound/welcome.mp3" class="visually-hidden"></audio>
-        </button>
+          <button class="btn-2 btn-mute fa-solid fa-volume-off" id="unmute-btn" aria-hidden="true" tabindex="-1" aria-label="Unmute"></button>
+                <audio id="mySound" src="assets/sound/welcome.mp3" class="visually-hidden" aria-hidden="true"></audio>
         </div>
         <div class="button">
           <a class="btn-2 btn-reset" href="play.html">Reset</a>
