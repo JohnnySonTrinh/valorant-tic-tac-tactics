@@ -135,16 +135,6 @@ p {
   text-decoration: none;
 }
 
-.btn-mute {
-  color: var(--clr-secondary-1);
-  box-shadow: none;
-}
-
-.btn-mute:hover {
-  background-color: transparent;
-  color: var(--clr-primary-2);
-  border: none;
-  box-shadow: none;
 }
 
 .btn-play:hover {
@@ -265,6 +255,15 @@ p {
 .btn-red:hover {
   background-color: transparent;
   color: var(--clr-black);
+
+.btn-mute {
+  color: var(--clr-primary-2);
+  background: transparent;
+  border: none;
+}
+
+.btn-mute:hover {
+  background-color: transparent;
 }
 
 .btn-reset {
