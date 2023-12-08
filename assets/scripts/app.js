@@ -1,5 +1,6 @@
 /* jshint esversion: 11, asi: true */
 
+// ==== DOM elements ====
 const sound = document.getElementById("mySound");
 const unmuteButton = document.getElementById("unmute-btn");
 
@@ -78,11 +79,6 @@ back.forEach(button => {
     mapContainer.classList.remove("hidden");
   });
 });
-
-
-
-
-
 
 
 // ==== Game logic ====
@@ -214,7 +210,6 @@ function handleCellClick(cell, boardId) {
         mapElement.setAttribute("data-winner", currentPlayer);
         // Delete this line
         console.log(`Winner set for map ${mapIndex}:`, mapElement.getAttribute("data-winner"));
-
     }
 
     // Check for an overall winner across all boards
