@@ -1,6 +1,7 @@
 /* jshint esversion: 11, asi: true */
-const sound = document.getElementById("mySound")
-const unmuteButton = document.getElementById("unmute-btn")
+
+const sound = document.getElementById("mySound");
+const unmuteButton = document.getElementById("unmute-btn");
 
 const mapContainer = document.querySelector(".map-container");
 const map = document.querySelectorAll(".map");
@@ -39,13 +40,13 @@ unmuteButton.addEventListener("click", () => {
     sound.play().catch(error => {
       console.error("Error playing the sound:", error);
     });
-    unmuteButton.classList.remove('fa-volume-off');
-    unmuteButton.classList.add('fa-volume-up');
+    unmuteButton.classList.remove("fa-volume-off");
+    unmuteButton.classList.add("fa-volume-up");
   } else {
     sound.pause();
     sound.currentTime = 0;
-    unmuteButton.classList.remove('fa-volume-up');
-    unmuteButton.classList.add('fa-volume-off');
+    unmuteButton.classList.remove("fa-volume-up");
+    unmuteButton.classList.add("fa-volume-off");
     }
 })
 
@@ -66,32 +67,34 @@ back.forEach(button => {
 
 
 
-// Game logic
+// ==== Game logic ====
 let currentPlayer = "Raze";
 const boards = {}; // Stores the state of each tic-tac-toe board
 let razeWins = 0;   // Count of wins for Raze
 let cypherWins = 0; // Count of wins for Cypher
 
 // Elements for displaying the scores
-const razeScoreElement = document.querySelector('.raze-win');
-const cypherScoreElement = document.querySelector('.cypher-win');
+const razeScoreElement = document.querySelector(".raze-win");
+const cypherScoreElement = document.querySelector(".cypher-win");
 
 // Initialize each tic-tac-toe board and set event listeners for cells
-document.querySelectorAll('.tic-tac-toe-board').forEach(board => {
+document.querySelectorAll(".tic-tac-toe-board").forEach(board => {
   const boardId = board.id;
   boards[boardId] = {
     cells: Array(9).fill(null), // Track the state of each cell (Raze, Cypher, or null)
     winner: null // Winner of the board (null if no winner yet)
   };
 
-  board.querySelectorAll('.cell').forEach((cell, index) => {
-    cell.setAttribute('data-index', index); // Set data attribute for cell index
-    cell.addEventListener('click', () => handleCellClick(cell, boardId), { once: true }); // Add click event listener
+  // Add click event listener to each cell
+  board.querySelectorAll(".cell").forEach((cell, index) => {
+    cell.setAttribute("data-index", index); // Set data attribute for cell index
+    cell.addEventListener("click", () => handleCellClick(cell, boardId), { once: true }); // Add click event listener
   });
 });
 
 // Function to check for a win on a board
 function checkWin(cells, player) {
+  // Winning combinations for a tic-tac-toe board
   const winCombinations = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
     [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -108,7 +111,7 @@ function checkPlayerWin(player, winCombinations) {
   return winCombinations.some(combination => {
     return combination.every(index => {
       const mapElement = document.querySelector(`.map[data-map="${index}"]`);
-      return mapElement && mapElement.getAttribute('data-winner') === player;
+      return mapElement && mapElement.getAttribute("data-winner") === player;
     });
   });
 }
@@ -128,38 +131,41 @@ function checkOverallGameWin() {
     return combination.every(index => {
       const mapElement = document.querySelector(`.map[data-map="${index}"]`);
       // Debug: Log the mapElement and its data-winner attribute
-      console.log(`Map ${index}:`, mapElement, mapElement.getAttribute('data-winner'));
-      return mapElement && mapElement.getAttribute('data-winner') === "Raze";
+      console.log(`Map ${index}:`, mapElement, mapElement.getAttribute("data-winner"));
+      return mapElement && mapElement.getAttribute("data-winner") === "Raze";
     });
   });
 
   const cypherWin = winCombinations.some(combination => {
     return combination.every(index => {
       const mapElement = document.querySelector(`.map[data-map="${index}"]`);
-      // Debug: Log the mapElement and its data-winner attribute
-      console.log(`Map ${index}:`, mapElement, mapElement.getAttribute('data-winner'));
-      return mapElement && mapElement.getAttribute('data-winner') === "Cypher";
+      // Delete this line
+      console.log(`Map ${index}:`, mapElement, mapElement.getAttribute("data-winner"));
+      return mapElement && mapElement.getAttribute("data-winner") === "Cypher";
     });
   });
 
   if (razeWin) {
-    console.log('Raze wins the overall game');
+    // Delete this line
+    console.log("Raze wins the overall game");
     return "Raze";
   } else if (cypherWin) {
-    console.log('Cypher wins the overall game');
+    // Delete this line
+    console.log("Cypher wins the overall game");
     return "Cypher";
   }
-
-  console.log('No overall winner yet');
+  // Delete this line
+  console.log("No overall winner yet");
   return null; // No overall winner yet
 }
 
-// Handles a cell click event
+// Handle a cell click event
 function handleCellClick(cell, boardId) {
   // Skip if the board already has a winner
   if (boards[boardId].winner) return; 
 
-  const cellIndex = parseInt(cell.getAttribute('data-index'));
+  // Get the cell index and update the board's state
+  const cellIndex = parseInt(cell.getAttribute("data-index"));
   boards[boardId].cells[cellIndex] = currentPlayer; // Update the board's state
 
   // Set cell content based on current player
@@ -173,24 +179,23 @@ function handleCellClick(cell, boardId) {
     updateScore(currentPlayer); // Update score for the player
     
     // Get the corresponding map div
-    const mapIndex = boardId.replace('board', '');
+    const mapIndex = boardId.replace("board", "");
     const mapDiv = document.querySelector(`.map${mapIndex}`);
     if (currentPlayer === "Raze") {
-      mapDiv.classList.add('raze-glow');
-      mapDiv.classList.remove('cypher-glow');
+      mapDiv.classList.add("raze-glow");
+      mapDiv.classList.remove("cypher-glow");
     } else {
-      mapDiv.classList.add('cypher-glow');
-      mapDiv.classList.remove('raze-glow');
+      mapDiv.classList.add("cypher-glow");
+      mapDiv.classList.remove("raze-glow");
     }
     // Set data-winner attribute on the corresponding mini-board
-    const mapElement = document.querySelector(`.map[data-map="${boardId.replace('board', '')}"]`);
+    const mapElement = document.querySelector(`.map[data-map="${boardId.replace("board", "")}"]`);
     if (mapElement) {
-        mapElement.setAttribute('data-winner', currentPlayer);
-        console.log(`Winner set for map ${mapIndex}:`, mapElement.getAttribute('data-winner'));
+        mapElement.setAttribute("data-winner", currentPlayer);
+        // Delete this line
+        console.log(`Winner set for map ${mapIndex}:`, mapElement.getAttribute("data-winner"));
 
     }
-
-    alert(`${currentPlayer} wins on ${boardId}!`);
 
     // Check for an overall winner across all boards
     const overallWinner = checkOverallGameWin();
@@ -198,14 +203,15 @@ function handleCellClick(cell, boardId) {
       alert(`${overallWinner} wins the overall game!`);
       endOverallGame(overallWinner); // Handle end of the overall game
     }
-    lockBoard(boardId); // Lock the board as it has a winner
+    // Lock the board as it has a winner
+    lockBoard(boardId); 
   }
 
   // Switch to the other player
   currentPlayer = currentPlayer === "Raze" ? "Cypher" : "Raze";
 }
 
-// Updates the score display for Raze or Cypher
+// Update the score display for Raze or Cypher
 function updateScore(player) {
   if (player === "Raze") {
     razeWins++;
@@ -219,9 +225,9 @@ function updateScore(player) {
 // Locks a board after a player wins it
 function lockBoard(boardId) {
   const board = document.getElementById(boardId);
-  const cells = board.querySelectorAll('.cell');
-  // Add 'locked-cell' class to each cell
+  const cells = board.querySelectorAll(".cell");
+  // Add "locked-cell" class to each cell
   cells.forEach(cell => {
-    cell.classList.add('locked-cell');
+    cell.classList.add("locked-cell");
   });
 }
