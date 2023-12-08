@@ -271,6 +271,7 @@ p {
   background-color: var(--clr-primary-2);
   color: var(--clr-white);
   border: var(--clr-secondary-1);
+  box-shadow: none;
 }
 
 .btn-reset:hover {
