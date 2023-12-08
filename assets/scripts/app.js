@@ -7,6 +7,11 @@ const mapContainer = document.querySelector(".map-container");
 const map = document.querySelectorAll(".map");
 const back = document.querySelectorAll(".back");
 
+const preloader = document.querySelector('.preloader');
+// preloader
+window.addEventListener('load', function () {
+  preloader.classList.add('hide-preloader');
+});
 
 // When hiding the button:
 document.getElementById("unmute-btn").setAttribute("aria-hidden", "true");
