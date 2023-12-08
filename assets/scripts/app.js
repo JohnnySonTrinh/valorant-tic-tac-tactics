@@ -21,6 +21,9 @@ document.getElementById("unmute-btn").style.display = "none"; // or .hidden = tr
 document.getElementById("unmute-btn").removeAttribute("aria-hidden");
 document.getElementById("unmute-btn").style.display = "block"; // or .hidden = false
 
+// change background
+document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/background.webp) center/cover`;
+
 // Iterate over each map and click event
 map.forEach(map => {
   map.addEventListener("click", () => {
