@@ -7,6 +7,15 @@ const mapContainer = document.querySelector(".map-container");
 const map = document.querySelectorAll(".map");
 const back = document.querySelectorAll(".back");
 
+
+// When hiding the button:
+document.getElementById("unmute-btn").setAttribute("aria-hidden", "true");
+document.getElementById("unmute-btn").style.display = "none"; // or .hidden = true
+
+// When showing the button:
+document.getElementById("unmute-btn").removeAttribute("aria-hidden");
+document.getElementById("unmute-btn").style.display = "block"; // or .hidden = false
+
 // Iterate over each map and click event
 map.forEach(map => {
   map.addEventListener("click", () => {
@@ -15,7 +24,7 @@ map.forEach(map => {
     let bg = map.dataset.bg;
 
     document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/map-${bg}.webp) center/cover`;
-    // Get correspoding board ID
+    // Delete this line
     console.log("click");
     
     const boardId = "board" + map.id.replace("map", "");
@@ -55,6 +64,7 @@ back.forEach(button => {
   button.addEventListener("click", () => {
     // Hide the current board
     button.parentElement.classList.add("hidden");
+    // Change background
     document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/background.webp) center/cover`;
     // Show the maps container again
     mapContainer.classList.remove("hidden");
@@ -119,14 +129,15 @@ function checkPlayerWin(player, winCombinations) {
 // Function to check for an overall game win
 function checkOverallGameWin() {
   const winCombinations = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8],
-    [0, 3, 6], [1, 4, 7], [2, 5, 8],
-    [0, 4, 8], [2, 4, 6]
+    [1, 2, 3], [4, 5, 6], [7, 8, 9],
+    [1, 4, 7], [2, 5, 8], [3, 6, 9],
+    [1, 5, 9], [3, 5, 7]
   ];
 
   // Debug: Check if the function is being called
-  console.log('Checking overall game win');
+  console.log("Checking overall game win");
 
+  // Raze win
   const razeWin = winCombinations.some(combination => {
     return combination.every(index => {
       const mapElement = document.querySelector(`.map[data-map="${index}"]`);
@@ -136,6 +147,7 @@ function checkOverallGameWin() {
     });
   });
 
+  // Cypher win
   const cypherWin = winCombinations.some(combination => {
     return combination.every(index => {
       const mapElement = document.querySelector(`.map[data-map="${index}"]`);
@@ -229,5 +241,29 @@ function lockBoard(boardId) {
   // Add "locked-cell" class to each cell
   cells.forEach(cell => {
     cell.classList.add("locked-cell");
+  });
+}
+
+// Handle end of the overall game
+function endOverallGame(player) {
+  // Display overall winner
+  const overallWinner = document.querySelector(".overall-winner");
+  overallWinner.textContent = `${player} is Victorious!`;
+  overallWinner.classList.remove("hidden");
+  // Hide the title
+  const title = document.querySelector(".title");
+  title.classList.add("hidden");
+  
+  // Hide the maps container
+  document.querySelectorAll(".map").forEach(map => {
+    let agent = currentPlayer === "Raze" ? "raze" : "cypher";
+    document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/agent-${agent}.webp) center/cover`;
+  });
+  // Lock all cells
+  document.querySelectorAll(".cell").forEach(cell => {
+    cell.classList.add("locked-cell");
+  });
+  document.querySelectorAll('.map').forEach(map => {
+    map.classList.add('locked-map');
   });
 }
