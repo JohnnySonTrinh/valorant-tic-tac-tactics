@@ -211,15 +211,15 @@ p {
   border-radius: var(--radius);
 }
 
-.back {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
 .locked-cell {
   background-color: black;
   pointer-events: none;
   transition: var(--transition);
+}
+
+.back {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .raze-win {
