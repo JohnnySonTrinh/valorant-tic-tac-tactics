@@ -130,7 +130,6 @@ p {
   font-size: 0.875rem;
   border: 2px solid var(--clr-primary-2);
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
   margin: 0 5vh;
   text-decoration: none;
