@@ -268,8 +268,8 @@ p {
 
 .btn-reset {
   width: 100%;
-  background-color: var(--clr-secondary-1);
-  color: var(--clr-black);
+  background-color: var(--clr-primary-2);
+  color: var(--clr-white);
   border: var(--clr-secondary-1);
 }
 
