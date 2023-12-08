@@ -155,10 +155,6 @@ p {
   scale: 1.2;
 }
 
-.btn-reset {
-  width: 100%;
-}
-
 @media (min-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -271,6 +267,16 @@ p {
 .btn-red:hover {
   background-color: var(--clr-primary-1);
   color: var(--clr-secondary-2);
+.btn-reset {
+  width: 100%;
+  background-color: var(--clr-secondary-1);
+  color: var(--clr-black);
+  border: var(--clr-secondary-1);
+}
+
+.btn-reset:hover {
+  color: var(--clr-white);
+  background-color: transparent;
 }
 
 .tic-tac-toe-board {
