@@ -392,6 +392,9 @@ p {
     justify-content: center;
     align-items: center;
   }
+  .btn-mute {
+    box-shadow: none;
+  }
   .tic-tac-toe-board {
     width: 490px;
     grid-template-columns: repeat(3, 150px);
