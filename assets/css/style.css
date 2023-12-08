@@ -252,7 +252,9 @@ p {
 
 .btn-red:hover {
   background-color: transparent;
-  color: var(--clr-black);
+  color: var(--clr-white);
+  border: transparent;
+}
 
 .btn-mute {
   color: var(--clr-primary-2);
