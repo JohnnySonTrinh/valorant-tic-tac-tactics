@@ -127,6 +127,10 @@ p {
   background: url(../images/map-sunset.webp) center/cover no-repeat;
 }
 
+.locked-map {
+  background: black;
+}
+
 .button {
   display: flex;
   justify-content: center;
