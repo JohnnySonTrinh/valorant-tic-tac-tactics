@@ -1,11 +1,10 @@
 /* jshint esversion: 11 asi: true */
-// Select items
-const infoDisplay = document.getElementById("info")
-const sound = document.getElementById("mySound")
-
-const prevBtn = document.getElementById("prev-btn")
-const nextBtn = document.getElementById("next-btn")
-const unmuteButton = document.getElementById("unmute-btn")
+// ==== DOM elements ====
+const infoDisplay = document.getElementById("info");
+const sound = document.getElementById("mySound");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const unmuteButton = document.getElementById("unmute-btn");
 
 
 // Local data
@@ -101,6 +100,5 @@ unmuteButton.addEventListener("click", () => {
     unmuteButton.classList.remove('fa-volume-up');
     unmuteButton.classList.add('fa-volume-off');
   }
-  
 });
 
