@@ -95,3 +95,33 @@ When visiting Tic Tac Tactics, users can expect:
 - Smooth and error-free gameplay with clear outcomes and feedback.
 - A secure and reliable website that maintains user privacy and data protection.
 - Regular updates and new features to keep the game fresh and exciting.
+
+## Wireframes
+
+For wireframing and viual structuring of my website's layout and design, I chose to utilize [Balsamiq](http://balsamiq.com/wireframes/ "Balsamic"). This tool allowed me to meticulously plan for a user-centric interface, ensuring that the experiance remains consistent and accessible on various devices. My goal throughout the design process was to prioritize ease of use and maintain a cohesive aesthetic from one to the next.
+
+ <details>
+
+ <summary>Desktop Wireframe</summary>
+
+| Page | Screenshots | Notes |
+| ---- | ----------- | ----- |
+| Index | ![Desktop Home](documentation/wireframe/desktop-index.png) | Home/index page. |
+| Play | ![Desktop Game](documentation/wireframe/desktop-play.png) | Game container, what you see after pressing play. |
+| Play | ![Desktop Miniboard](documentation/wireframe/desktop-miniboard.png) | Miniboard container when you press one map. |
+| Thankyou | ![Desktop Thankyou](documentation/wireframe/desktop-thankyou.png) | After getting the ultimate win. |
+
+ </details>
+ <details>
+
+<summary>Mobile Wireframe</summary>
+
+| Page | Screenshots | Notes |
+| ---- | ----------- | ----- |
+| Index | ![Mobile Home](documentation/wireframe/mobile-index.png) | Home/index page. |
+| Play | ![Mobile Game](documentation/wireframe/mobile-play.png) | Game container, what you see after pressing play. |
+| Play | ![Mobile Miniboard](documentation/wireframe/mobile-miniboard.png) | Miniboard container when you press one map. |
+| Thankyou | ![Mobile Thankyou](documentation/wireframe/mobile-thankyou.png) | After getting the ultimate win. |
+
+</details>
+
