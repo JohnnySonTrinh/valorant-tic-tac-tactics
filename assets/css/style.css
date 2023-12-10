@@ -302,6 +302,7 @@ p {
   align-items: center;
   justify-content: center;
   background-color: #b8ebd0bc;
+  box-shadow: var(--light-shadow);
 }
 
 .cell:hover {
