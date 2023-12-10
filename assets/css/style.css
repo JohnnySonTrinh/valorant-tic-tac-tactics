@@ -218,10 +218,6 @@ p {
   background: url(../images/map-sunset.webp) center/cover no-repeat;
 }
 
-.locked-map {
-  background: black;
-}
-
 .button {
   display: flex;
   justify-content: center;
@@ -237,7 +233,6 @@ p {
   letter-spacing: var(--spacing);
   transition: var(--transition);
   font-size: 0.8rem;
-  border: 2px solid var(--clr-primary-2);
   cursor: pointer;
   border-radius: var(--radius);
   text-align: center;
@@ -247,7 +242,6 @@ p {
 .btn-red {
   color: var(--clr-white);
   background: var(--clr-primary-1);
-  border: 2px solid var(--clr-primary-1);
 }
 
 .btn-red:hover {
@@ -270,7 +264,6 @@ p {
   width: 100%;
   background-color: var(--clr-primary-2);
   color: var(--clr-white);
-  border: var(--clr-secondary-1);
   box-shadow: none;
 }
 
@@ -324,12 +317,6 @@ p {
   border-radius: var(--radius);
 }
 
-.locked-cell {
-  background-color: black;
-  pointer-events: none;
-  transition: var(--transition);
-}
-
 .back {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -360,20 +347,23 @@ p {
 }
 
 .raze-glow {
-  box-shadow: 0 0 20px 10px var(--clr-primary-1);
+  background: linear-gradient(rgba(255, 0, 0, 0.221), rgba(255, 0, 0, 0.221)), url(../images/agent-raze.webp) center/cover no-repeat;
+
 }
 
 .cypher-glow {
-  box-shadow: 0 0 20px 10px var(--clr-primary-2);
+  background: linear-gradient(rgba(0, 225, 0, 0.221), rgba(0, 225, 0, 0.221)), url(../images/agent-cypher.webp) center/cover no-repeat;
 }
 
 .raze-glow:hover {
   background: linear-gradient(rgba(255, 0, 0, 0.221), rgba(255, 0, 0, 0.221)), url(../images/agent-raze.webp) center/cover no-repeat;
   transition: var(--transition);
+  box-shadow: 0 0 20px 10px var(--clr-primary-1);
 }
 .cypher-glow:hover {
   background: linear-gradient(rgba(0, 225, 0, 0.221), rgba(0, 225, 0, 0.221)), url(../images/agent-cypher.webp) center/cover no-repeat;
   transition: var(--transition);
+  box-shadow: 0 0 20px 10px var(--clr-primary-2);
 }
 
 @media (min-width: 768px) {
@@ -402,6 +392,24 @@ p {
     gap: 20px;
     border-radius: var(--radius);
   }
+}
+
+.locked-map {
+  background: rgba(0, 0, 0, 0.221);
+}
+.locked-map:hover {
+  box-shadow: none;
+}
+
+.locked-cell {
+  background-color: black;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.locked-raze {
+  background: rgba(0, 0, 0, 0.538), url(../images/ability-paint-shells.webp) center/cover no-repeat;
+  pointer-events: none;
 }
 
 /* Hides the board */
