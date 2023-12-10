@@ -220,10 +220,22 @@ function handleCellClick(cell, boardId) {
     }
     // Lock the board as it has a winner
     lockBoard(boardId); 
+  } else if (checkTie(boards[boardId].cells)) {
+    // If it's a tie, make the corresponding map glow
+    const mapElement = document.querySelector(`.map[data-map="${boardId.replace('board', '')}"]`);
+    if (mapElement) {
+      mapElement.classList.add('tie');
+      lockBoard(boardId)
+    }
   }
 
   // Switch to the other player
   currentPlayer = currentPlayer === "Raze" ? "Cypher" : "Raze";
+}
+
+// Define the checkTie function
+function checkTie(cells) {
+  return cells.every(cell => cell !== null);
 }
 
 // Update the score display for Raze or Cypher
