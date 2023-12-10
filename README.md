@@ -125,3 +125,7 @@ For wireframing and viual structuring of my website's layout and design, I chose
 
 </details>
 
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
