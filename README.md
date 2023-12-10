@@ -129,3 +129,8 @@ For wireframing and viual structuring of my website's layout and design, I chose
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
+## Acknowledgements
+
+- A special thanks to my mentor, [Tim Nelson](https://github.com/TravelTimN), for their invaluable guidance, support, and insights throughout the development process.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for testing my game and finding bugs.
+- A special mention to my dog, Loke, who has been an unexpected companion in this coding adventure. His presence and, in his own way, helping me 'debug' my code during those long nights has been a source of comfort and motivation.
