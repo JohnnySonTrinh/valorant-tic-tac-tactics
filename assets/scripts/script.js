@@ -1,10 +1,10 @@
 /* jshint esversion: 11 asi: true */
 // ==== DOM elements ====
-const infoDisplay = document.getElementById("info");
-const sound = document.getElementById("mySound");
-const prevBtn = document.getElementById("prev-btn");
-const nextBtn = document.getElementById("next-btn");
-const unmuteButton = document.getElementById("unmute-btn");
+const infoDisplay = document.getElementById("info")
+const sound = document.getElementById("mySound")
+const prevBtn = document.getElementById("prev-btn")
+const nextBtn = document.getElementById("next-btn")
+const unmuteButton = document.getElementById("unmute-btn")
 
 
 // Local data
@@ -80,7 +80,7 @@ function showText(index) {
 }
 
 // Set the audio to loop
-sound.loop = true;
+sound.loop = true
 
 // Play audio when press unmute
 unmuteButton.addEventListener("click", () => {
@@ -88,17 +88,17 @@ unmuteButton.addEventListener("click", () => {
   if (sound.paused) {
     sound.play().then(() => {
       // Change icon to volume up when the sound is playing
-      unmuteButton.classList.remove('fa-volume-off');
-      unmuteButton.classList.add('fa-volume-up');
+      unmuteButton.classList.remove('fa-volume-off')
+      unmuteButton.classList.add('fa-volume-up')
     }).catch(error => {
-      console.error("Error playing the sound:", error);
-    });
+      console.error("Error playing the sound:", error)
+    })
   } else {
-    sound.pause();
-    sound.currentTime = 0;
+    sound.pause()
+    sound.currentTime = 0
     // Change icon to volume off when the sound is paused
-    unmuteButton.classList.remove('fa-volume-up');
-    unmuteButton.classList.add('fa-volume-off');
+    unmuteButton.classList.remove('fa-volume-up')
+    unmuteButton.classList.add('fa-volume-off')
   }
-});
+})
 
