@@ -120,16 +120,6 @@ function checkWin(cells, player) {
   });
 }
 
-// Helper function to check if a specific player has won the overall game
-function checkPlayerWin(player, winCombinations) {
-  return winCombinations.some(combination => {
-    return combination.every(index => {
-      const mapElement = document.querySelector(`.map[data-map="${index}"]`);
-      return mapElement && mapElement.getAttribute("data-winner") === player;
-    });
-  });
-}
-
 // Function to check for an overall game win
 function checkOverallGameWin() {
   const winCombinations = [
@@ -185,9 +175,7 @@ function handleCellClick(cell, boardId) {
   boards[boardId].cells[cellIndex] = currentPlayer; // Update the board's state
 
   // Set cell content based on current player
-  cell.innerHTML = currentPlayer === "Raze" 
-    ? '<img class="raze" src="assets/images/ability-paint-shells.webp" alt="Raze">' 
-    : '<img class="cypher" src="assets/images/ability-spycam.webp" alt="Cypher">';
+  cell.innerHTML = currentPlayer === "Raze" ? '<img class="raze" src="assets/images/ability-paint-shells.webp" alt="Raze">' : '<img class="cypher" src="assets/images/ability-spycam.webp" alt="Cypher">';
 
   // Check if this move wins the game
   if (checkWin(boards[boardId].cells, currentPlayer)) {
