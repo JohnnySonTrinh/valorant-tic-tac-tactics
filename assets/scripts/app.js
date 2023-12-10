@@ -284,7 +284,4 @@ function endOverallGame(player) {
   document.querySelectorAll(".cell").forEach(cell => {
     cell.classList.add("locked-cell");
   });
-  document.querySelectorAll('.map').forEach(map => {
-    map.classList.add('locked-map');
-  });
 }
