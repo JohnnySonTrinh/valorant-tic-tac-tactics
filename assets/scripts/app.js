@@ -228,7 +228,6 @@ function handleCellClick(cell, boardId) {
       lockBoard(boardId)
     }
   }
-
   // Switch to the other player
   currentPlayer = currentPlayer === "Raze" ? "Cypher" : "Raze";
 }
@@ -271,6 +270,13 @@ function endOverallGame(player) {
   
   // Hide the maps container
   document.querySelectorAll(".map").forEach(map => {
+    if (map.classList.contains("raze-glow")) { // Raze won this map
+      map.classList.add("raze-ability") 
+    } else if (map.classList.contains("cypher-glow")) { // Cypher won this map
+      map.classList.add("cypher-ability");
+    } else {
+      map.classList.add('locked-map');
+    }
     let agent = currentPlayer === "Raze" ? "raze" : "cypher";
     document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/agent-${agent}.webp) center/cover`;
   });
