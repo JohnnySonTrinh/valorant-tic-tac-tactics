@@ -216,6 +216,7 @@ p {
 }
 
 .btn-mute:hover {
+  color: var(--clr-primary-2);
   background-color: transparent;
 }
 
