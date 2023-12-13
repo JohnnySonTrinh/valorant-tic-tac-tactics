@@ -428,6 +428,7 @@ p {
 /* Style for locked classes */
 .locked-map {
   background: rgba(0, 0, 0, 0.221);
+  pointer-events: none;
 }
 .locked-map:hover {
   box-shadow: none;
