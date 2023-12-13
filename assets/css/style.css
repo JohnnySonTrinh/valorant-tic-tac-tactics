@@ -210,7 +210,7 @@ p {
 }
 
 .btn-mute {
-  color: var(--clr-primary-2);
+  color: var(--clr-white);
   background: transparent;
   border: none;
 }
