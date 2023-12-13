@@ -22,8 +22,10 @@
     </div>
     <!-- Header -->
     <header>
-      <h1 class="overall-winner winner hidden">Winner Winner Chicken Dinner</h1>
-      <h1 class="title">Tic tac tactics</h1>
+      <h1 class="title overall-winner winner">Tic Tac Tactics</h1>
+      <div class="player-turn hidden">
+        <img id="player-icon" src="assets\images\ability-raze.webp" alt="Current Player">
+      </div>
     </header>
     <!-- Main -->
     <main>
@@ -54,7 +56,8 @@
                 <audio id="mySound" src="assets/sound/welcome.mp3" class="visually-hidden" aria-hidden="true"></audio>
         </div>
         <div class="button">
-          <a class="btn-2 btn-reset" href="play.html">Reset</a>
+          <a class="btn-2 btn-reset" href="play.html" id="reset-btn">Reset</a>
+          <a class="btn-2 btn-reset hidden" href="thankyou.html" id="thankyou-btn">Thank you!</a>
         </div>
         <div class="button">
           <a class="btn-2 btn-red" href="index.html">BACK</a>

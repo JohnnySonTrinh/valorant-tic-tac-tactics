@@ -4,9 +4,12 @@
 const sound = document.getElementById("mySound")
 const unmuteButton = document.getElementById("unmute-btn")
 
+const title = document.querySelector(".title")
+const playerTurn = document.querySelector(".player-turn")
 const mapContainer = document.querySelector(".map-container")
 const map = document.querySelectorAll(".map")
 const back = document.querySelectorAll(".back")
+
 
 const preloader = document.querySelector('.preloader')
 // preloader
@@ -32,10 +35,7 @@ map.forEach(map => {
 
     // Change background
     let bg = map.dataset.bg
-
     document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/map-${bg}.webp) center/cover`
-    // Delete this line
-    console.log("click")
     
     const boardId = "board" + map.id.replace("map", "")
     // Hide all boards
@@ -46,6 +46,8 @@ map.forEach(map => {
     const board = document.getElementById(boardId)
     board.classList.remove("hidden")
     mapContainer.classList.add("hidden")
+    playerTurn.classList.remove("hidden")
+    title.classList.add("hidden")
   })
 })
 
@@ -78,6 +80,8 @@ back.forEach(button => {
     document.body.style.background = `linear-gradient(rgb(15, 18, 17), rgba(76, 63, 41, 0.664)), url(assets/images/background.webp) center/cover`
     // Show the maps container again
     mapContainer.classList.remove("hidden")
+    playerTurn.classList.add("hidden")
+    title.classList.remove("hidden")
   })
 })
 
@@ -129,15 +133,10 @@ function checkOverallGameWin() {
     [1, 5, 9], [3, 5, 7]
   ]
 
-  // Debug: Check if the function is being called
-  console.log("Checking overall game win")
-
   // Raze win
   const razeWin = winCombinations.some(combination => {
     return combination.every(index => {
       const mapElement = document.querySelector(`.map[data-map="${index}"]`)
-      // Debug: Log the mapElement and its data-winner attribute
-      console.log(`Map ${index}:`, mapElement, mapElement.getAttribute("data-winner"))
       return mapElement && mapElement.getAttribute("data-winner") === "Raze"
     })
   })
@@ -146,23 +145,15 @@ function checkOverallGameWin() {
   const cypherWin = winCombinations.some(combination => {
     return combination.every(index => {
       const mapElement = document.querySelector(`.map[data-map="${index}"]`)
-      // Delete this line
-      console.log(`Map ${index}:`, mapElement, mapElement.getAttribute("data-winner"))
       return mapElement && mapElement.getAttribute("data-winner") === "Cypher"
     })
   })
 
   if (razeWin) {
-    // Delete this line
-    console.log("Raze wins the overall game")
     return "Raze"
   } else if (cypherWin) {
-    // Delete this line
-    console.log("Cypher wins the overall game")
     return "Cypher"
   }
-  // Delete this line
-  console.log("No overall winner yet")
   return null // No overall winner yet
 }
 
@@ -197,14 +188,11 @@ function handleCellClick(cell, boardId) {
     const mapElement = document.querySelector(`.map[data-map="${boardId.replace("board", "")}"]`)
     if (mapElement) {
         mapElement.setAttribute("data-winner", currentPlayer)
-        // Delete this line
-        console.log(`Winner set for map ${mapIndex}:`, mapElement.getAttribute("data-winner"))
     }
 
     // Check for an overall winner across all boards
     const overallWinner = checkOverallGameWin()
     if (overallWinner) {
-      alert(`${overallWinner} wins the overall game!`)
       endOverallGame(overallWinner) // Handle end of the overall game
     }
     // Lock the board as it has a winner
@@ -219,6 +207,8 @@ function handleCellClick(cell, boardId) {
   }
   // Switch to the other player
   currentPlayer = currentPlayer === "Raze" ? "Cypher" : "Raze"
+    // Call this function whenever the player changes
+    updatePlayerTurn(currentPlayer);
 }
 
 // Define the checkTie function
@@ -252,10 +242,6 @@ function endOverallGame(player) {
   // Display overall winner
   const overallWinner = document.querySelector(".overall-winner")
   overallWinner.textContent = `${player} is Victorious!`
-  overallWinner.classList.remove("hidden")
-  // Hide the title
-  const title = document.querySelector(".title")
-  title.classList.add("hidden")
   
   // Hide the maps container
   document.querySelectorAll(".map").forEach(map => {
@@ -273,4 +259,14 @@ function endOverallGame(player) {
   document.querySelectorAll(".cell").forEach(cell => {
     cell.classList.add("locked-cell")
   })
+  const resetBtn = document.getElementById("reset-btn")
+  resetBtn.classList.add("hidden")
+  const thankyouBtn = document.getElementById("thankyou-btn")
+  thankyouBtn.classList.remove("hidden")
+}
+
+function updatePlayerTurn(player) {
+  const playerIconElement = document.getElementById('player-icon')
+  playerIconElement.src = `assets/images/ability-${player.toLowerCase()}.webp`
+  playerIconElement.alt = `${player}'s Icon`
 }
