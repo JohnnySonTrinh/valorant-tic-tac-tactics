@@ -14,10 +14,11 @@ I used [coolors.co](https://coolors.co/c1272d-ff7f00-ffd700-b8ebd0-009b3a-c9a66b
 I've used CSS ':root' variables to easily update the global colour scheme by changing only one value instead of everywhere in the CSS file.
 
 ```css
+/* Root Variables */
 :root {
   /* Valorant Theme Colors */
   --clr-primary-1: #c1272d;
-  --clr-primary-2: #009b3a;
+  --clr-primary-2: #007e2f;
   --clr-secondary-1: #ffd700;
   --clr-secondary-2: #ff7f00;
   --clr-secondary-3: #c9a66b;
@@ -25,9 +26,6 @@ I've used CSS ':root' variables to easily update the global colour scheme by cha
   /* Base Colors */
   --clr-black: #000000;
   --clr-white: #ffffff;
-  /* Gray shades */
-  --clr-grey-1: hsl(207, 11%, 20%);
-  --clr-grey-2: hsl(210, 22%, 49%);
   /* Font Family Variables */
   --ff-primary: Roboto Slab, sans-serif;
   --ff-secondary: Montserrat, sans-serif;
