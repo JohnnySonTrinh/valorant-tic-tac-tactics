@@ -253,6 +253,17 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
+### Local VS Deployment
+
+
+Seamless Transition
+
+During the development of "VALORANT TIC TAC TACTICS," I maintained a consistent environment between local development and live deployment. This approach ensured a smooth and issue-free transition when deploying the game.
+
+## Credits
+
+I am grateful for the various resources and individuals who contributed to the successful completion of this project:
+
 ## Acknowledgements
 
 - A special thanks to my mentor, [Tim Nelson](https://github.com/TravelTimN), for their invaluable guidance, support, and insights throughout the development process.
