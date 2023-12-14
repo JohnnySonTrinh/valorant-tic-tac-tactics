@@ -266,7 +266,9 @@ function endOverallGame(player) {
 }
 
 function updatePlayerTurn(player) {
-  const playerIconElement = document.getElementById('player-icon')
-  playerIconElement.src = `assets/images/ability-${player.toLowerCase()}.webp`
-  playerIconElement.alt = `${player}'s Icon`
+  if (player === "Raze") {
+    playerTurn.innerHTML = `<img class="raze-turn" src="assets/images/ability-paint-shells.webp" alt="Raze">`
+  } else { 
+    playerTurn.innerHTML = `<img class="cypher-turn" src="assets/images/ability-spycam.webp" alt="Cypher">`
+  }
 }
