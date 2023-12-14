@@ -123,6 +123,56 @@ For wireframing and viual structuring of my website's layout and design, I chose
 
 </details>
 
+## Features
+
+My game features a collection of interactive tic-tac-toe boards inspired by the maps of Valorant, where each board represents a different map in the game universe. Players can easily select a map to play on by simply clicking on it, which brings up a mini tic-tac-toe board for strategic gameplay.
+
+### Starting Screen
+
+  - The gateway to "Tic Tac Tactics" sets the stage for an immersive strategic experience with its vibrant and thematic starting screen. Here's what it offers:
+
+![screenshot](documentation/readme/feature-starting-screen.png)
+
+**Engaging Introduction**
+
+  - As soon as players land on the game, they are greeted with a dynamic starting screen that immediately draws them into the world of "Tic Tac Tactics". Featuring artwork that melds the electric ambiance of Brazil with the mysterious allure of Morocco, it promises an exciting clash of cultures and strategies.
+
+![screenshot](documentation/readme/feature-engaging-introduction.png)
+
+**Simple Navigation**
+
+![screenshot](documentation/readme/feature-simple-navigation.png)
+
+  - The music button on the starting screen allows players to tailor the auditory experience to their preference. This button toggles the game's music, offering an immersive audio backdrop for those who desire it, or silence for those who prefer to strategize in quiet. Its design is consistent with the game's overall theme, ensuring a seamless integration into the user interface.
+
+  ![screenshot](documentation/readme/feature-music-button.png)
+
+  - Focus of the starting screen is the "Play" button, encapsulated in a sleek and modern design that's hard to miss. This intuitive interface ensures players know exactly how to begin their adventure with just one click.
+
+  ![screenshot](documentation/readme/feature-play.png)
+
+  - Flanking the "Music" button are arrow buttons, integral for players to navigate through the game's tutorial text. These arrows, clearly distinguishable and responsive, allow players to scroll through the introductory text at their own pace. The left arrow takes the player to the previous piece of information, while the right arrow progresses to the next, ensuring that each player is well-informed and prepared before they hit "Play".
+
+  ![screenshot](documentation/readme/feature-arrows.png)
+
+### Map Selection
+
+- The map selection screen is a gateway to the strategic core  of Tic Tac Tactics. Here, players are greeted with a visual feast of maps, each representing a distinct arena from the game's universe. The scoreboard, prominently displayed at the top, keeps track of the ongoing duel's score, fueling the competitive spirit.
+
+![screenshot](documentation/readme/feature-map-board.png)
+
+- Below the scoreboard, the maps are laid out in a 3x3 grid, mirroring the tic-tac-toe structure and allowing players to choose their battleground with a simple click. This familiar layout ensures an intuitive selection process, drawing players into the gameplay without any confusion.
+
+![screenshot](documentation/readme/feature-battleground.png)
+
+- At the bottom of the screen, 3 buttons, "Music" "Reset" and "Back" offer clear options for starting afresh or revisiting previous screens. The "Reset" button, highlighted in a calming green, suggests a new beginning, while the "Back" button in red signals a cautious step back to reconsider if you want to go to start screen.
+
+![screenshot](documentation/readme/feature-buttons.png)
+
+- Each map is a clickable portal to a mini-game, where players will engage in the classic game of tic-tac-toe with a Valorant-inspired twist. The design's simplicity, paired with the vivid imagery of the maps, provides an engaging user interface that is both functional and aesthetically pleasing, ensuring players are fully immersed from the outset.
+
+![screenshot](documentation/readme/feature-mini-boards.png)
+
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
