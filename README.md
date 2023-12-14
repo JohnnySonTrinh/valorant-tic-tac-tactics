@@ -255,9 +255,6 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-
-Seamless Transition
-
 During the development of "VALORANT TIC TAC TACTICS," I maintained a consistent environment between local development and live deployment. This approach ensured a smooth and issue-free transition when deploying the game.
 
 ## Credits
