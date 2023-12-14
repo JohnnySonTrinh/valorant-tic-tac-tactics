@@ -189,6 +189,23 @@ My game features a collection of interactive tic-tac-toe boards inspired by the 
 
 **Playing vs Computer**
 - Implement subtle sound cues for computer moves, providing audio feedback that helps players understand the game's flow when playing against AI.
+## Tools & Technologies Used
+
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
+- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [Visual Studio Code](https://code.visualstudio.com/) used as a cloud-based IDE for development.
+- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for responsive design.
+- [Am I Responsive](http://ami.responsivedesign.is/) - used to verify responsiveness of website on different devices.
+-  [FL Studio](https://www.image-line.com/) used to create music.
+
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
