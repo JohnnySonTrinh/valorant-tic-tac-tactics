@@ -220,6 +220,10 @@ The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
 The live link can be found [here](https://johnnysontrinh.github.io/a-gamers-portfolio-site)
 
+### Local Deployment
+
+This project can be cloned or forked in order to make a local copy on your own system.
+
 ## Acknowledgements
 
 - A special thanks to my mentor, [Tim Nelson](https://github.com/TravelTimN), for their invaluable guidance, support, and insights throughout the development process.
