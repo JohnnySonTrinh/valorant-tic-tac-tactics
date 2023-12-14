@@ -173,6 +173,22 @@ My game features a collection of interactive tic-tac-toe boards inspired by the 
 
 ![screenshot](documentation/readme/feature-mini-boards.png)
 
+### Future Features
+
+**Multiplayer Mode**
+- Introduce a real-time multiplayer mode where players can challenge friends or other online players. This feature aims to foster a competitive and social environment within the game.
+
+**Customizable Avatars**
+- Allow players to create and customize their own avatars, adding a personal touch to the gaming experience.
+
+**New Maps and Characters**
+- Regularly introduce new maps and characters from the Valorant universe to keep the game fresh and engaging.
+
+**Sound** 
+- Design a distinct sound that captures the theme of each map and ulitmate Victory adding an auditory layer to the visual experience.
+
+**Playing vs Computer**
+- Implement subtle sound cues for computer moves, providing audio feedback that helps players understand the game's flow when playing against AI.
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
