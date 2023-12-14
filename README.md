@@ -276,6 +276,21 @@ I am grateful for the various resources and individuals who contributed to the s
 | [Flexbox Froggy](https://flexboxfroggy.com/)                                | entire site        | modern responsive layouts                        |
 | [Grid Garden](https://cssgridgarden.com)                                    | entire site        | modern responsive layouts                        |
 
+### Media
+
+The visual elements play a crucial role in creating an immersive and engaging experience on the game. Here's a breakdown of the various media sources:
+
+- **Valorant Images**: The striking image of Agent [Raze](https://valorant.fandom.com/wiki/Raze) and [Cypher](https://valorant.fandom.com/wiki/Cypher), featured mini-boards, was sourced from [Valorant Wiki](https://valorant.fandom.com/). The maps [Ascent](https://valorant.fandom.com/wiki/Ascent), [Bind](https://valorant.fandom.com/wiki/Bind), [Breeze](https://valorant.fandom.com/wiki/Breeze), [Fracture](https://valorant.fandom.com/wiki/Fracture), [Haven](https://valorant.fandom.com/wiki/Haven), [Icebox](https://valorant.fandom.com/wiki/Icebox), [Pearl](https://valorant.fandom.com/wiki/Pearl), [Split](https://valorant.fandom.com/wiki/Split), [Sunset](https://valorant.fandom.com/wiki/Sunset) for Map selection board.
+
+- **Music** Made with a friend inspiration [Blind Pick](https://www.youtube.com/watch?v=Q4UwsxvVnmI) by riot games.
+
+- **Icons**: Various icons from [Font Awesome](https://fontawesome.com) are utilized throughout the site to enhance its aesthetic appeal and user navigation. Specific icons include:
+- [Arrow-left](https://fontawesome.com/icons/arrow-left?f=classic&s=regular)
+- [Arrow-right](https://fontawesome.com/icons/arrow-right?f=classic&s=regular)
+- [Volume-off](https://fontawesome.com/icons/volume-off?f=classic&s=solid)
+- [Volume-high](https://fontawesome.com/icons/volume-high?f=classic&s=solid)
+- Social media icons like [GitHub](https://fontawesome.com/icons/github?f=brands&s=solid), [Instagram](https://fontawesome.com/icons/instagram?f=brands&s=solid), and [LinkedIn](https://fontawesome.com/icons/linkedin?f=brands&s=solid) to facilitate easy connectivity with users on various platforms.
+
 ## Acknowledgements
 
 - A special thanks to my mentor, [Tim Nelson](https://github.com/TravelTimN), for their invaluable guidance, support, and insights throughout the development process.
