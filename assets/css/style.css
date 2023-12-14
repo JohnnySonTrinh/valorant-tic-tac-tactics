@@ -394,6 +394,20 @@ p {
   background: var(--clr-primary-1);
 }
 
+.raze-turn {
+  background: var(--clr-primary-1);
+  border-radius: var(--radius);
+  font-size: 1.5rem;
+  height: 3rem;
+}
+
+.cypher-turn {
+  background: var(--clr-primary-2);
+  border-radius: var(--radius);
+  font-size: 1.5rem;
+  height: 3rem;
+}
+
 .cypher {
   background: var(--clr-primary-2);
 }
