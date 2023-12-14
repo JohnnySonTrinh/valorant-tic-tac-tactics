@@ -264,6 +264,18 @@ During the development of "VALORANT TIC TAC TACTICS," I maintained a consistent 
 
 I am grateful for the various resources and individuals who contributed to the successful completion of this project:
 
+### Content
+
+| Source                                                                      | Location           | Notes                                            |
+| --------------------------------------------------------------------------- | ------------------ | ------------------------------------------------ |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder)                    | README and TESTING | tool to help generate the Markdown files         |
+| [Chris Beams](https://chris.beams.io/posts/git-commit)                      | version control    | "How to Write a Git Commit Message"              |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site        | responsive HTML/CSS/JS navbar                    |
+| [Youtube](https://youtu.be/onSGAEanl_Y?si=PZHb_kh37PWSXMrH)           | Player turn/grid      | Grid layouts aswell indicatior for players turn                       |
+| [W3Schools](https://www.w3schools.com/css/css3_variables.asp)               | entire site        | how to use CSS :root variables                   |
+| [Flexbox Froggy](https://flexboxfroggy.com/)                                | entire site        | modern responsive layouts                        |
+| [Grid Garden](https://cssgridgarden.com)                                    | entire site        | modern responsive layouts                        |
+
 ## Acknowledgements
 
 - A special thanks to my mentor, [Tim Nelson](https://github.com/TravelTimN), for their invaluable guidance, support, and insights throughout the development process.
