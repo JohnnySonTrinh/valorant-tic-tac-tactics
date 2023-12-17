@@ -180,7 +180,7 @@ p {
 .btn-play:hover {
   color: var(--clr-secondary-4);
   background: var(--clr-primary-2);
-  scale: 1.2;
+  transform: scale(1.1);
 }
 
 .btn-2 {
@@ -362,7 +362,7 @@ p {
     gap: 20px;
   }
   .map:hover {
-    scale: 1.15;
+    transform: scale(1.2);
   }
   .btn-2 {
     height: 50px;
