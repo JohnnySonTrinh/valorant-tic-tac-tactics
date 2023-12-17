@@ -455,7 +455,7 @@ p {
 }
 
 .locked-raze {
-  background: rgba(0, 0, 0, 0.538), url(../images/ability-paint-shells.webp) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.538)), url(../images/ability-paint-shells.webp) center/cover no-repeat;
   pointer-events: none;
 }
 
