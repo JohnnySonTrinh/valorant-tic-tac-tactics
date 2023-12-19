@@ -1,4 +1,5 @@
-/* jshint esversion: 11 asi: true */
+/* jshint esversion: 11, asi: true */
+
 // ==== DOM elements ====
 const infoDisplay = document.getElementById("info")
 const sound = document.getElementById("mySound")
