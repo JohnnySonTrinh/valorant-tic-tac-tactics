@@ -37,3 +37,14 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | App | ![screenshot](documentation/test/jshint-validator-app.png) | Pass: No Errors |
 | Script | ![screenshot](documentation/test/jshint-validator-script.png) | Pass: No Erros
 
+## Browser Compatibility
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Home | Map board | Mini baords | Thank you | Notes |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| Chrome | ![screenshot](documentation/test/bc-chrome-home.png) |  ![screenshot](documentation/test/bc-chrome-map-board.png) |  ![screenshot](documentation/test/bc-chrome-mini-boards.png) |  ![screenshot](documentation/test/bc-chrome-thank-you.png) | Works as expected |
+| Firefox | ![screenshot](documentation/test/bc-firefox-home.png) |  ![screenshot](documentation/test/bc-firefox-map-board.png) |  ![screenshot](documentation/test/bc-firefox-mini-maps.png) |  ![screenshot](documentation/test/bc-firefox-thankyou.png) | Works as expected |
+| Safari | ![screenshot](documentation/test/bc-safari-home.png) |  ![screenshot](documentation/test/bc-safari-map-board.png) |  ![screenshot](documentation/test/bc-safari-mini-bords.png) |  ![screenshot](documentation/test/bc-safari-thankyou.png) | Works as expected |
+| Opera GX | ![screenshot](documentation/test/bc-opera-gx-home.png) |  ![screenshot](documentation/test/bc-opera-gx-map-board.png) |  ![screenshot](documentation/test/bc-opera-gx-mini-map.png) |  ![screenshot](documentation/test/bc-opera-gx-thankyou.png) | Works as expected |
+
