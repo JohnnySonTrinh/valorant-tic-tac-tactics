@@ -16,23 +16,18 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Play | [W3C Play](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2Fplay.html) | ![Screenshot](documentation/test/html-validator-play.png) | Pass: No Errors |
 | Thank you | [W3C Thank you](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2Fthankyou.html) | ![Screenshot](documentation/test/html-validator-thankyou.png) | Pass: No Erros |
 
-### Issue:
+### CSS
 
-The "Previous" and "Next" navigation buttons were moving to the center when one of them was hidden, causing an inconsistent user interface experience.
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-### Impact:
 
-This issue caused confusion for users as the expected navigation layout changed between steps, affecting the overall usability of the application.
 
-### Steps to Reproduce:
+| Page | Jigsaw URL | Screenshot | Notes |
+| ---- | ---------- | ---------- | ----- |
+| Style | None | ![screenshot](documentation/test/css-validator-style.png) | Pass: No Errors |
+| Page | [Jigsaw W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/test/css-validator-page.png) | Fail: parse error (Bootstrap) |
 
-1. Load the "How to Play" section of the game.
-2. Navigate to the first page of instructions where the "Previous" button should not be visible.
-3. Observe the position of the "Next" button shifting to the center.
 
-### Resolution:
 
-Implemented a CSS solution using `opacity` and `pointer-events` to hide the buttons instead of `display: none`. This approach ensures the buttons retain their space in the layout even when they are not visible, maintaining the expected layout.
 
-### Status:
 
