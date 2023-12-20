@@ -129,3 +129,32 @@ To validate that the game meets the expectations and needs of its users, I condu
 | As a first-time visitor, I want clear user instructions and easy navigation throughout the site. | ![screenshot](documentation/readme/feature-engaging-introduction.png) | Passed: The game provides clear user instructions and easy site navigation, making it accessible and user-friendly for first-time visitors. |
 	
 These tests were meticulously conducted to cover various aspects of the game, ensuring it aligns with the goals, requirements, and expectations set forth for both users and the site owner. The game performed excellently across all testing parameters, indicating a successful alignment with its intended objectives.
+
+## Bugs
+
+**Bug:** Unresponsive Game Controls
+
+***Description:*** Players are unable to interact with the game board, and clicks do not register.
+
+***Potential Cause:*** Event listeners might not be properly attached to the game elements.
+
+**Solution:** Ensure that event listeners are correctly attached after the DOM elements are fully loaded. Use console logs or breakpoints to debug the event handling process.
+
+**Bug:** Incorrect Game State Updates
+
+***Description:*** The game does not accurately reflect the current state, e.g., the wrong player's turn is displayed.
+
+***Potential Cause:*** Logical error in the function that updates the game state.
+
+**Solution:** Review and refactor the state update logic. Add unit tests to cover different game scenarios to ensure the state updates as expected.
+
+**Bug:** Game Layout Breaks on Mobile Devices
+
+***Description:*** The game interface becomes unaligned or overlaps on smaller screens.
+
+***Potential Cause:*** CSS styles are not fully responsive or adaptive to different screen sizes.
+
+**Solution:** Use media queries to adjust styles for various screen sizes. Test the layout on multiple devices and screen resolutions.
+
+***There are no remaining bugs that I am aware of.***
+
