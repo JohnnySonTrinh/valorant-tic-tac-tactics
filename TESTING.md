@@ -158,3 +158,14 @@ These tests were meticulously conducted to cover various aspects of the game, en
 
 ***There are no remaining bugs that I am aware of.***
 
+## Unfixed Bugs
+
+During the CSS validation process, several parsing errors were reported. These errors are associated with the minified version of Bootstrap's CSS (version 5.3.2), which is an external library used in the project. Here's an overview of the identified issues:
+
+- **Bootstrap Parsing Errors**: The CSS validator reported parsing errors in the Bootstrap library. As these errors are within an external, well-maintained library, they are beyond the scope of this project's direct codebase. Such parsing errors are known to occur in minified files where optimizations for size may result in unconventional syntax that doesn't affect functionality but may not pass strict validation.
+
+It's important to note that these parsing errors do not impact the performance or visual rendering of the website. The Bootstrap library is widely used and tested, and the errors reported are recognized as false positives that do not indicate actual issues in the library's operation or the website's functionality.
+
+**Screenshot:** ![Bootstrap CSS Parsing Errors](documentation/test/css-validator-page.png)
+
+While these errors are acknowledged, no action is required as they are part of the minified Bootstrap library and not a result of the project's custom CSS code.
