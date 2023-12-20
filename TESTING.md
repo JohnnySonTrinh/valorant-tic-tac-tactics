@@ -13,7 +13,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Page | W3C                                                                                                                         | Screenshot | Notes |
 | ---- | --------------------------------------------------------------------------------------------------------------------------- | ---------- | ----- |
 | Home | [W3C Home](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2Findex.html) | ![Screenshot](documentation/test/html-validator-home.png)| Pass: No Errors |
-## Bug Report
+| Play | [W3C Play](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2Fplay.html) | ![Screenshot](documentation/test/html-validator-play.png) | Pass: No Errors |
+| Thank you | [W3C Thank you](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2Fthankyou.html) | ![Screenshot](documentation/test/html-validator-thankyou.png) | Pass: No Erros |
 
 ### Issue:
 
