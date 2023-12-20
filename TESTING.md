@@ -20,13 +20,10 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-
-
 | Page | Jigsaw URL | Screenshot | Notes |
 | ---- | ---------- | ---------- | ----- |
 | Style | None | ![screenshot](documentation/test/css-validator-style.png) | Pass: No Errors |
 | Page | [Jigsaw W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/test/css-validator-page.png) | Fail: parse error (Bootstrap) |
-
 
 ### JavaScript
 
@@ -47,4 +44,16 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Firefox | ![screenshot](documentation/test/bc-firefox-home.png) |  ![screenshot](documentation/test/bc-firefox-map-board.png) |  ![screenshot](documentation/test/bc-firefox-mini-maps.png) |  ![screenshot](documentation/test/bc-firefox-thankyou.png) | Works as expected |
 | Safari | ![screenshot](documentation/test/bc-safari-home.png) |  ![screenshot](documentation/test/bc-safari-map-board.png) |  ![screenshot](documentation/test/bc-safari-mini-bords.png) |  ![screenshot](documentation/test/bc-safari-thankyou.png) | Works as expected |
 | Opera GX | ![screenshot](documentation/test/bc-opera-gx-home.png) |  ![screenshot](documentation/test/bc-opera-gx-map-board.png) |  ![screenshot](documentation/test/bc-opera-gx-mini-map.png) |  ![screenshot](documentation/test/bc-opera-gx-thankyou.png) | Works as expected |
+
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Home | Map board | Mini boards | Thank you | Notes |
+| ------ | ---- | --------- | ----------- | --------- | ----- |
+| Mobile (DevTools) | ![screenshot](documentation/test/responsiveness-mobile-dev-home.png) | ![screenshot](documentation/test/responsiveness-mobile-dev-map-board.png) | ![screenshot](documentation/test/responsiveness-mobile-dev-mini-boards.png) | ![screenshot](documentation/test/responsiveness-mobile-dev-thankyou.png) | Work as expected |
+| Tablet (DevTools) | ![screenshot](documentation/test/responsiveness-tablet-dev-home.png) | ![screenshot](documentation/test/responsiveness-tablet-dev-map-board.png) | ![screenshot](documentation/test/responsiveness-tablet-dev-mini-boards.png) | ![screenshot](documentation/test/responsiveness-tablet-thankyou.png) | Works as expected | 
+| Desktop | ![screenshot](documentation/test/responsiveness-desktop-home.png) | ![screenshot](documentation/test/responsiveness-desktop-map-board.png) | ![screenshot](documentation/test/responsiveness-desktop-mini-boards.png) | ![screenshot](documentation/test/responsiveness-desktop-thankyou.png) | Work as expected |
+| XL monitor (DevTools) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-home.png) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-map-board.png) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-mini-boards.png) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-thankyou.png) | Scaling starts to have minor issues | 
+| Iphone 14 | ![screenshot](documentation/test/responsiveness-iphone-14-home.PNG) | ![screenshot](documentation/test/responsiveness-iphone-14-map-board.PNG) | ![screenshot](documentation/test/responsiveness-iphone-14-mini-boards.PNG) | ![screenshot](documentation/test/responsiveness-iphone-14-thankyou.PNG) | Work as expected |
 
