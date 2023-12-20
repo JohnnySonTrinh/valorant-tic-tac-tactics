@@ -28,6 +28,12 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | Page | [Jigsaw W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjohnnysontrinh.github.io%2Fvalorant-tic-tac-tactics%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/test/css-validator-page.png) | Fail: parse error (Bootstrap) |
 
 
+### JavaScript
 
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
+| File | Screenshot | Notes |
+| ---- | ---------- | ----- |
+| App | ![screenshot](documentation/test/jshint-validator-app.png) | Pass: No Errors |
+| Script | ![screenshot](documentation/test/jshint-validator-script.png) | Pass: No Erros
 
