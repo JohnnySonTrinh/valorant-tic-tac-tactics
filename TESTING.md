@@ -68,3 +68,41 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Play   | ![screenshot](documentation/test/lighthouse-mobile-play.png)   | ![screenshot](documentation/test/lighthouse-desktop-play.png)   | Image warning (Best Practices)                    |
 | Thank you | ![screenshot](documentation/test/lighthouse-mobile-thankyou.png) | ![screenshot](documentation/test/lighthouse-desktop-thankyou.png) | Some minor warnings  |
 
+## Manual Testing
+
+The objective of this manual testing was to ensure the game functions as expected and identify any potential issues.
+
+### Test Environment
+
+**Device**: Laptop and Smartphone
+
+***Browser***: Google Chrome and Mozilla Firefox
+Operating System: Windows 10 and IOS
+Test Cases
+1. ***Page Load Test Objective****: Ensure the game loads correctly on various browsers.
+Results:
+
+***Chrome***: The game loaded quickly without any errors.
+Firefox: Experienced minor delay in loading, but no significant issues. No Issue with Iphone 14.
+
+2. **Gameplay Functionality Objective**:
+ Test the basic gameplay mechanics.
+
+***Results***: The game accurately tracked player moves.
+Game status updated correctly after each move.
+No issues were found in the gameplay mechanics.
+
+
+3. **Responsive Design Objective**: Test the game's responsiveness on different devices.
+
+***Results:***
+Desktop: The game was visually appealing and functional.
+***Smartphone***: All features were accessible, and the game adjusted well to the smaller screen.
+
+4. **Error Handling Objective**: Ensure that errors are handled gracefully.
+
+***Results***: Attempted invalid actions, and the game prevented these actions without crashing.
+Appropriate error messages were displayed when necessary.
+Conclusion
+game performed well across all tested areas. The gameplay mechanics, character abilities, and error handling were all functioning as expected. The game also showed good responsiveness on different devices and browsers. No major issues were identified during the testing process.
+
