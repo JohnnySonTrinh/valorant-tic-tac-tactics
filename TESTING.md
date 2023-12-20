@@ -57,3 +57,14 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | XL monitor (DevTools) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-home.png) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-map-board.png) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-mini-boards.png) | ![screenshot](documentation/test/responsiveness-xl-montior-dev-thankyou.png) | Scaling starts to have minor issues | 
 | Iphone 14 | ![screenshot](documentation/test/responsiveness-iphone-14-home.PNG) | ![screenshot](documentation/test/responsiveness-iphone-14-map-board.PNG) | ![screenshot](documentation/test/responsiveness-iphone-14-mini-boards.PNG) | ![screenshot](documentation/test/responsiveness-iphone-14-thankyou.PNG) | Work as expected |
 
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| ---- | ------ | ------- | ----- |
+| Home | ![screenshot](documentation/test/lighthouse-mobile-home.png)    | ![screenshot](documentation/test/lighthouse-desktop-home.png)    | Some minor warnings                     |
+| Play   | ![screenshot](documentation/test/lighthouse-mobile-play.png)   | ![screenshot](documentation/test/lighthouse-desktop-play.png)   | Image warning (Best Practices)                    |
+| Thank you | ![screenshot](documentation/test/lighthouse-mobile-thankyou.png) | ![screenshot](documentation/test/lighthouse-desktop-thankyou.png) | Some minor warnings  |
+
