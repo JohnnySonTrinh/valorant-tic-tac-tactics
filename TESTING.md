@@ -106,3 +106,26 @@ Appropriate error messages were displayed when necessary.
 Conclusion
 game performed well across all tested areas. The gameplay mechanics, character abilities, and error handling were all functioning as expected. The game also showed good responsiveness on different devices and browsers. No major issues were identified during the testing process.
 
+## User Story Testing
+
+To validate that the game meets the expectations and needs of its users, I conducted tests based on specific user stories. These tests were designed to verify that users can achieve their objectives using the current features of the game.
+
+### User Goals Testing
+
+| User Story | Screenshot | Test Result |
+| ---------- | ---------- | ----------- |
+| As a user, I want to enjoy a fun and engaging game that can be played with friends. | ![screenshot](documentation/test/ust-friends.png) | Passed: The game offers an engaging multiplayer experience with smooth gameplay, fostering fun sessions with friends. |
+| As a strategy enthusiast, I'm looking for a familiar game but with a unique twist that increases strategic depth. | ![screenshot](documentation/test/ust-strategy.png) | Passed: The integration of maps and character abilities provides a unique twist to the classic tic-tac-toe, enhancing the strategic aspect of the game. |
+| As a visitor, I expect to navigate the site easily with intuitive controls and clear instructions. | ![screenshot](documentation/test/ust-clear.png) | Passed: The site features intuitive navigation and clear instructions, making it easy for new users to understand and play the game. |
+| As a mobile user, I want to access the game from various devices with consistent quality and performance. | ![screenshot](documentation/readme/mockup.png) | Passed: The game's responsive design ensures it adapts well to different screen sizes and devices, maintaining consistent quality and performance. |
+
+### Requirements and Expectations Testing
+
+| User Story | Screenshot | Test Result |
+| ---------- | ---------- | ----------- |
+| As a player, I expect the game to be fully playable with interactive elements like maps and character abilities. | ![sccreenshot](documentation/test/ust-friends.png) | Passed: The game includes fully interactive elements such as maps and character abilities, offering a complete and immersive gameplay experience. |
+| As a tech-savvy user, I expect a responsive design that adapts to different screen sizes and devices. | ![screenshot](documentation/test/ust-responsiveness.png) | Passed: The game's design is responsive, providing a seamless experience across various devices and screen sizes. |
+| As an aesthete, I look forward to high-quality visuals and sounds that enhance the gameplay experience. | ![screenshot](documentation/test/ust-first-time.png) | Passed: The game boasts high-quality visuals and sound effects that significantly enhance the gameplay experience. |
+| As a first-time visitor, I want clear user instructions and easy navigation throughout the site. | ![screenshot](documentation/readme/feature-engaging-introduction.png) | Passed: The game provides clear user instructions and easy site navigation, making it accessible and user-friendly for first-time visitors. |
+	
+These tests were meticulously conducted to cover various aspects of the game, ensuring it aligns with the goals, requirements, and expectations set forth for both users and the site owner. The game performed excellently across all testing parameters, indicating a successful alignment with its intended objectives.
